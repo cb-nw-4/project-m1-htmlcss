@@ -1,3 +1,52 @@
 @import 'css-reset.css';
+@import 'mobile-style.css';
+@import 'desktop-style.css';
 
-/* CSS here :) */
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+}
+
+.logo-img{
+    align-self: center;
+    width: 50px;
+    height: 40px;  
+    margin: 10px;
+}
+
+.mobile-nav{
+    align-self: center;
+}
+.mobile-nav > img{
+    margin: 20px;
+    align-self: center;
+}
+
+.desktop-nav{
+    position: relative;
+    display: none;
+}
+
+.desktop-nav ul{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-nav ul li{
+    margin: 10px;
+    padding-left: 10px;
+}
+
+
+
+

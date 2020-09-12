@@ -1,0 +1,12 @@
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    .mobile-nav > img{
+        display: block;
+        margin: 10px;  
+    }
+
+
+
+
+}
