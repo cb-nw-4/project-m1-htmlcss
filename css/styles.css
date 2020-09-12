@@ -1,10 +1,12 @@
 @import "css-reset.css";
 
-
-
 :root {
   --primary-color: #3a3633;
+  --z-index-nav: 1;
 }
+
+
+/* nav section */
 
 .nav {
   background: var(--primary-color);
@@ -12,15 +14,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: var(--z-index-nav);
 }
 
-.nav-images {
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
 
 .nav-container {
   position: absolute;
@@ -33,11 +35,11 @@
   display: none;
 }
 
-.hamburger, .logo {
+.hamburger,
+.logo {
   height: 60px;
   padding: 10px;
 }
-
 
 .menu:hover .nav-container {
   display: block;
@@ -47,8 +49,63 @@ li {
   padding: 1em;
 }
 
+li:hover {
+  background: rgba(180, 175, 175, 0.05);
+}
+
 a {
   text-decoration: none;
   color: white;
 }
 
+/* Hero section  */
+
+.hero {
+  position: relative;
+  background-image: url(/imgs/bg.jpg);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.heading-container {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  
+} 
+
+h1 {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+ 
+h2 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  top: 35%;
+  padding: 1em;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  line-height: 1.4em;
+  width: 100%;
+  height: 200px;
+  
+  /* text-align: center; */
+}
