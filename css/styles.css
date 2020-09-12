@@ -95,31 +95,40 @@ body{
     flex-direction: column; /*MOFIFIABLE DESKTOP*/
 }
 
-.intro-box-1{
-    margin-top: 50px;
-    padding: 0px 20px 0px 20px;
+.intro-box-1, .intro-box-2{
+    padding-right: 22px;
+    padding-left: 22px;
 }
 
+.intro-box-1{
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
 
-
+.intro-box-2{
+    background-color: rgba(0,0,0,0.2);
+    box-sizing: content-box;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 80px;
+}
 
 h1{
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
     padding-bottom: 1em;
     padding-top: 1em;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 5px;
 }
 
 .intro-paragraph{
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 
