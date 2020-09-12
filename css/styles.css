@@ -1,3 +1,63 @@
 @import 'css-reset.css';
 
-/* CSS here :) */
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --border-radius: 4px;
+    --content-width: 1200px;
+    --color-dark-gray: #3a3633;
+    --color-med-gray: #a6a6a6;
+}
+
+@media (max-width: 768px) {
+    /* NAV BAR */
+
+    nav {
+        background-color: var(--color-dark-gray);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* border: red solid 3px; */
+    }
+
+    .mobileNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px; /* NAV SIZE */
+    }
+
+    .logo {
+        width: 100px;
+        height: 100%;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        width: 80px;
+        height: 100%;
+        border: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* display: none; */
+    }
+
+
+
+
+    .menuItems {    
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
