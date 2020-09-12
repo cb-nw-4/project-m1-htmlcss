@@ -3,13 +3,16 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    color: black;
+    
+
 }
 
 html {
     scroll-behavior: smooth;
 }
 .navbar {
-    
+    display: flex;
 }
 
 .nav {
@@ -33,43 +36,34 @@ html {
     padding:10px 40px 10px 40px ;
     
 }
-a {
+.menu {
     color:white;
     cursor: pointer;
     text-decoration: none;
-    
 }
 
-a:hover {
+.menu:hover {
     border-bottom: 4px solid white;
 }
 
-
-.background > h1 {
-    color: white;
-    border: 2px solid black;
-    padding: 50px;
-}
-.background > h2 {
-    color: white;
-    border: 2px solid black;
-    padding: 25px;
-}
-
-.background > p { 
-    color: white;
-    border: 2px solid black;
-    padding: 50px;
-} 
-
 .background {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1; 
+    object-fit: cover;  
+}
+
+.text-cover {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 500px;
-    background-image: url("imgs/bg.jpg") ;
-    background-size: auto;
-    background-position: center;
+    position: absolute;
+    height: 400px;
+    color: white;
+    background-color: red;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
 }
 
 .top-advantage {
@@ -85,6 +79,7 @@ a:hover {
 }
 
 .bottom-advantage {
+    position: relative;
     color: white;
     background: linear-gradient(to right, white, blue) ;
     text-align: right;
@@ -101,7 +96,7 @@ a:hover {
 }
 
 .gallery {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -132,13 +127,22 @@ a:hover {
 }
 
 .info {
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: red;
+    padding: 20px;
+    
 }
 
-.info tr {
-
+.row-list {
+    
 }
-
-.info td {
-
+.info-list {
+    display: flex;
+    flex-direction: column;
+}
+.info-list > a {
+    color: black;
+    text-decoration: none;
 }
