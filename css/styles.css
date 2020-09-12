@@ -1,3 +1,146 @@
 @import 'css-reset.css';
 
 /* CSS here :) */
+html body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: black;
+}
+
+nav a{
+    display:block;
+}
+.rightfloat{
+    display: flex;
+    float: right;
+    color: white;
+}
+.logo{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 7px;
+}
+.menu-mobile{
+    background-color: black; 
+    outline: none;
+    border: none;
+    display: none;
+}
+.menu-desktop{
+    display: flex;
+    vertical-align: middle;
+    list-style: none;
+}
+
+a{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 8px;
+    margin-right: 10px;
+    font-size: 13px ;
+    text-decoration: none;
+    color: white;
+}
+
+.bg1{
+    width: calc(100% - 0px);
+}
+
+.textoverlay{
+    position: absolute;
+    top: 200px;
+    margin: 0 100px 0 100px;
+    display: flex;
+    border:5px solid white;
+    color: white;
+}
+
+.speaker{
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+}
+h1{
+    font-size: 45px;
+    vertical-align: middle;
+    padding: 80px 10px 80px 10px;
+    font-weight: bold;
+}
+h3{
+    font-size: 30px;
+    padding: 30px 10px 30px 10px;
+    font-weight: bold;
+}
+section{
+    margin-top: 10px;
+    font-size: 13px;
+    margin-inline-end: 10px;
+}
+.newtext{
+    display: flex;
+    border-top: 1px dashed white;
+}
+
+
+/* @media here */
+
+@media(max-width:768px){
+    .menu-mobile{display:block;}
+    .menu-desktop{display: none;}
+    .rightfloat:hover .menu-desktop{
+        display:block;
+        background-color: black;
+        top: 25px;
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        text-align: center;
+        padding: 20px;
+        z-index: 1;
+        }  
+    
+        .textoverlay{
+            top: 50px;
+            margin:0;
+            display: block;
+            border: 0;
+            color: white;
+            width: 100vw;
+            padding: 0;
+            width: calc(100% - 0px);
+        }
+        
+        .speaker{
+            background-color: rgba(0,0,0,0.2);
+            margin-top: 20px;
+            padding: 10px;
+        }
+        h1{
+            font-size: 20px;
+            vertical-align: middle;
+            text-align: left;
+            font-weight: bold;
+            padding: 0;
+            margin:0 0 0 10px;
+        }
+        h3{
+            font-size: 10px;
+            padding: 0px;
+            font-weight: bold;
+        }
+        section{
+            margin-top: 0px;
+            font-size: 10px;
+            padding: 0px;
+        }
+        .newtext{
+            display: block;
+            border: 0;
+        }
+
+
+    
+  }
