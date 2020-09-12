@@ -1,3 +1,54 @@
-@import 'css-reset.css';
+@import "css-reset.css";
 
-/* CSS here :) */
+
+
+:root {
+  --primary-color: #3a3633;
+}
+
+.nav {
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.nav-container {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--primary-color);
+  width: 100vw;
+  display: block;
+  text-align: center;
+  display: none;
+}
+
+.hamburger, .logo {
+  height: 60px;
+  padding: 10px;
+}
+
+
+.menu:hover .nav-container {
+  display: block;
+}
+
+li {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
