@@ -1,3 +1,175 @@
 @import 'css-reset.css';
 
-/* CSS here :) */
+/* CSS Variables */
+:root {
+    --border-radius: 4px;
+    --content-width: 1200px;
+    --color-dark-gray: #3a3633;
+    --color-med-gray: #a6a6a6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Mobile styles */
+
+
+header {
+    width: 100vw;
+}
+
+.navbar {
+    background-color: var(--color-dark-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+}
+
+.navbar > img {
+    height: 40px;
+    margin: 10px;
+}
+
+.navigation {
+    display: none;
+   
+}
+
+.nav-item {
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    background-color: var(--color-dark-gray)
+}
+
+.nav-item > a {
+    color: white;
+}
+
+.menu:hover .navigation{
+        display: block;
+    }
+}
+
+.falcon {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* features section */
+#features {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature-box {
+    border: solid 1px var(--color-med-gray);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+    height: 275px;
+    width: 250px;
+    box-shadow: 1px 1px 1px 1px var(--color-med-gray);
+}
+
+.feature-icon {
+    margin: 15px;
+}
+
+h3 {
+    font-weight: bolder;
+    color: var(--color-dark-gray);
+    margin-bottom: 30px;
+}
+
+.feature-text {
+    color: var(--color-med-gray);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-btn {
+    background-color: #3a3633;
+    color: white;
+    width: 225px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    position: relative;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    /* Desktop styles */
+
+    .menu {
+        display: none;
+    };
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    };
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /*features section */
+
+    #features {
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+
+
+}
