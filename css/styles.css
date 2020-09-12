@@ -1,3 +1,138 @@
 @import 'css-reset.css';
 
-/* CSS here :) */
+:root{
+    --header-height: 50px;
+    --header-color:#3a3633;
+    --header-hover-color: #44403d;
+}
+
+body{
+    background-color: yellow;
+    font-family:'Poppins', sans-serif;
+
+}
+
+/*********************************************
+*   HEADER
+*   Navigation bar and dropdowns
+**********************************************/
+
+.header{
+    height: var(--header-height);
+    background-color:var(--header-color);
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-menu{
+    height: var(--header-height);
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+.icon {
+    height: var(--header-height);
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.drop-content{
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left:0;
+}
+
+.drop-item{
+    background-color: var(--header-color);
+    text-align: center;
+    width: 100vw;
+    padding: 20px;
+}
+
+.drop-item:hover{
+    cursor: pointer;
+    background-color: violet;
+}
+
+.mobile-menu:hover .drop-content{ 
+    display:block;
+    cursor: pointer;
+}
+
+
+.desktop-menu { 
+    display: flex;
+}
+
+.desktop-menu>li{ 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.desktop-menu>li:hover{
+    background-color: violet;
+}
+
+/*********************************************
+*   INTRODUCTION
+*   
+**********************************************/
+.section-introduction{
+    color: white;
+    background-image: url('/imgs/bg.jpg');
+    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    display: flex;
+
+    flex-direction: column; /*MOFIFIABLE DESKTOP*/
+}
+
+.intro-box-1{
+    margin-top: 50px;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+
+h1{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.intro-paragraph{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+
+/*************************************
+*   MEDIA QUERIES
+*   
+**************************************/
+@media (max-width: 767px) {
+    .desktop-menu{display: none;}
+}
+
+@media (min-width: 768px) {
+    .mobile-menu{display: none;}
+
+}
