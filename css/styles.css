@@ -57,7 +57,7 @@ body{
 
 .drop-item:hover{
     cursor: pointer;
-    background-color: violet;
+    background-color: var(--header-hover-color);
 }
 
 .mobile-menu:hover .drop-content{ 
@@ -89,10 +89,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: auto;
     display: flex;
 
     flex-direction: column; /*MOFIFIABLE DESKTOP*/
+    padding-bottom: 80px;
 }
 
 .intro-box-1, .intro-box-2{
@@ -110,10 +110,10 @@ body{
     box-sizing: content-box;
     padding-bottom: 30px;
     padding-top: 30px;
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 }
 
-h1{
+.title-1{
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 1em;
@@ -132,6 +132,58 @@ h2{
 }
 
 
+/*********************************************
+*   FEATURES
+*   
+**********************************************/
+
+.features-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /*flex-direction: row;*/
+    /*padding: 0px 20px 30px;*/
+    /*padding: 0px 150px 0;*/
+    justify-content: center;
+    /*margin:auto;*/
+}
+
+.feature-item{
+    width: 250px;
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 10px 10px;
+}
+
+
+.featureButton{
+    background-color: var(--header-color);
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 0 10px;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 18px 0 22px;
+}
+
+.feature-item>p{
+    color:#c3bbbe;
+    margin: 0px 5px 16px;
+    line-height: 22px;
+}
+
+.feature-item>img{
+    height: 35px;
+}
+
 
 /*************************************
 *   MEDIA QUERIES
@@ -142,6 +194,18 @@ h2{
 }
 
 @media (min-width: 768px) {
+    body{background-color: lightpink;}
     .mobile-menu{display: none;}
+    .section-introduction{
+        flex-direction: row;
+        padding: 150px 150px 150px;}
+    .title-1{font-size: 50px;}
+    .features-container{flex-direction: row;}
+    .feature-item{margin-right: 40px;}
+    .feature-item:last-of-type{margin-right: 0;}
+
+    
+
 
 }
+
