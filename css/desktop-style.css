@@ -21,7 +21,7 @@
     .head > div{
         display: flex;
         box-sizing: inherit;
-        border: 2px solid white;
+        border: 6px solid white;
         height: 50%;
         width: 80%;
         align-self: center;  
@@ -42,9 +42,10 @@
         justify-content: space-around;
         padding: 10px;
     }
+    .feature{
+        width: 25%;
+    }
 
-
-    
     footer{
         justify-content: space-around;
     }

@@ -22,7 +22,7 @@ body{
 .head{
     display: flex;
     background-color: wheat;
-    height: 500px;
+    height: 80vh;
     background-image: url("../imgs/bg.jpg");   
     background-repeat: no-repeat;   
     background-size: 100% 100%; 
@@ -30,7 +30,7 @@ body{
 
 
 h1{
-    font-size: 36px;
+    font-size: 50px;
     color: white;
     font-weight: bold;
     margin: 20px;
@@ -38,12 +38,19 @@ h1{
 }
 
 h3{
-    font-size: 24px;
+    font-size: 26px;
     color: white;
     padding: 20px 0;
     font-weight: bold;
     margin-left: 20px;
 }
+
+h4{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
 
 .head p{
     color: white;
@@ -58,6 +65,43 @@ h3{
 main{
     min-height: 100vh;
 }
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px;    
+    margin: 20px;
+    justify-content: center;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    align-items: center;
+    margin: 20px;
+    padding: 15px 10px;
+    box-shadow: 2px 2px lightsteelblue;
+    border-radius: 4px;
+}
+
+.feature p{
+    font-size: 14px;
+    color: gray;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.feature button{
+    margin-top: auto;
+    padding: 10px;
+    width: 95%;
+    background-color: black;
+    color: white;
+    border-radius: unset;
+    border: none;
+}
+
 footer{
     display: flex;
     color: gray;
