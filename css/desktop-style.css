@@ -3,6 +3,55 @@
 
     .mobile-nav{
         display: none;
+        position: absolute;
+    }
+
+    .desktop-nav ul{
+        position: relative;
+        align-self: center;
+    }
+
+    .desktop-nav > ul li:hover{
+        background-color: thistle;
+    }
+
+    .head{
+        justify-content: center;
+    }
+    .head > div{
+        display: flex;
+        box-sizing: inherit;
+        border: 2px solid white;
+        height: 50%;
+        width: 80%;
+        align-self: center;  
+    }
+
+    .head > div > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head h3{
+        margin-bottom: 20px;
+        border-bottom: 1px dashed white;
+    }
+
+    .head-s-section{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+
+    
+    footer{
+        justify-content: space-around;
+    }
+    
+    footer div > ul >li{
+        min-height: 2rem;
+        align-self: center;
     }
 
 }

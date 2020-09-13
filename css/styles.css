@@ -8,12 +8,69 @@ html {
 body{
     font-family: 'Poppins', sans-serif;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
-header{
+.head-nav{
     display: flex;
     background-color: #000000;
     justify-content: space-between;
 }
+
+.head{
+    display: flex;
+    background-color: wheat;
+    height: 500px;
+    background-image: url("../imgs/bg.jpg");   
+    background-repeat: no-repeat;   
+    background-size: 100% 100%; 
+}
+
+
+h1{
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+h3{
+    font-size: 24px;
+    color: white;
+    padding: 20px 0;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.head p{
+    color: white;
+    margin-left: 20px;
+    min-height: 2rem;
+}
+
+.head > div >div{
+    background-color: rgba(0,0,0,0.5);
+}
+
+main{
+    min-height: 100vh;
+}
+footer{
+    display: flex;
+    color: gray;
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    min-height: 10vh;
+    box-sizing: border-box;
+}
+
+footer div > ul >li{
+    margin: 10px;
+}
+
 
 .logo-img{
     align-self: center;
@@ -32,7 +89,7 @@ header{
 
 .desktop-nav{
     position: relative;
-    display: none;
+    display: flex;
 }
 
 .desktop-nav ul{
@@ -44,7 +101,7 @@ header{
 
 .desktop-nav ul li{
     margin: 10px;
-    padding-left: 10px;
+    box-sizing: content-box;
 }
 
 
