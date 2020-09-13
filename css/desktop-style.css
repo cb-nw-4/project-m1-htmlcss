@@ -46,6 +46,10 @@
         width: 25%;
     }
 
+    .coolLook{
+        margin-left: 35px ;
+    }
+
     footer{
         justify-content: space-around;
     }

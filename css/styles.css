@@ -101,6 +101,57 @@ main{
     border-radius: unset;
     border: none;
 }
+.block{
+    display: flex;
+    flex-direction: column;
+}
+.cool{
+    background-color: black;
+    min-height: 30vh;
+    margin-bottom: 0;
+    padding: 50px 20px;
+}
+
+.cool p{
+    color: white;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.coolLook{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border: 5px solid white;
+    background-color: black;
+    z-index: 2;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: -60px;
+
+}
+
+.coolLook h6{
+    color: red;
+    margin: 10px 0;
+}
+.coolLook p{
+    font-size: 11px;
+    color: white;
+}
+
+
+.gradient{
+    background-image: linear-gradient(to right, #F0F8FF,#1F90FF);
+    min-height: 30vh;
+    text-align: right;
+    padding: 50px 20px;
+}
+
+.gradient p{
+    color: white;
+    padding: 20px;
+}
 
 footer{
     display: flex;
