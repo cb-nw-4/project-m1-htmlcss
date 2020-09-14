@@ -189,9 +189,12 @@ header{
     box-sizing: border-box;
     padding: 50px 0px;
     height: 300px;
-    text-align: right;
+   
 }
-
+.gradient-text {  
+    text-align: right;
+    
+}
 
 .dropdown:hover  .nav-dropdown {   
     display: flex;  
@@ -299,7 +302,7 @@ header{
     height: 400px;
 }
 .cool-text {  
-    margin-left: 10px; 
+    margin-left: 10px;    
     width: 80%;
     text-overflow: hidden;
 }
@@ -311,9 +314,29 @@ header{
 
 /* gradient section */
 .section-gradient {   
-    padding: 50px 10px;
+    padding: 50px 0px;
     height: 400px;
     
 }
 
+.gradient-text {  
+    margin-right: 10px;
+}
+
   }
+
+  @media (min-width: 1200px) {
+
+    .cool-text {  
+        margin: auto;  
+        max-width : 1200px;
+        
+    }
+
+    .gradient-text {  
+        margin: auto;  
+        max-width : 1200px;
+        
+    }
+
+}
