@@ -325,7 +325,7 @@ header{
 
   }
 
-  @media (min-width: 1200px) {
+  /* @media (min-width: 1200px) {
 
     .cool-text {  
         margin: auto;  
@@ -339,4 +339,4 @@ header{
         
     }
 
-}
+} */
