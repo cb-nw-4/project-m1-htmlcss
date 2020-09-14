@@ -1,35 +1,35 @@
 @import 'css-reset.css';
 @import 'mobile-style.css';
 @import 'desktop-style.css';
-
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
 }
 
-.head-nav{
+.head-nav {
     display: flex;
     background-color: #000000;
     justify-content: space-between;
 }
 
-.head{
+.head {
     display: flex;
     background-color: wheat;
     height: 80vh;
-    background-image: url("../imgs/bg.jpg");   
-    background-repeat: no-repeat;   
-    background-size: 100% 100%; 
+    background-image: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-
-h1{
+h1 {
     font-size: 50px;
     color: white;
     font-weight: bold;
@@ -37,7 +37,7 @@ h1{
     padding: 20px 0;
 }
 
-h3{
+h3 {
     font-size: 26px;
     color: white;
     padding: 20px 0;
@@ -45,36 +45,35 @@ h3{
     margin-left: 20px;
 }
 
-h4{
+h4 {
     font-size: 18px;
     font-weight: bold;
     padding: 20px;
 }
 
-
-.head p{
+.head p {
     color: white;
     margin-left: 20px;
     min-height: 2rem;
 }
 
-.head > div >div{
-    background-color: rgba(0,0,0,0.5);
+.head>div>div {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
-.features{
+.features {
     display: flex;
     justify-content: space-around;
-    border-radius: 4px;    
+    border-radius: 4px;
     margin: 20px;
     justify-content: center;
 }
 
-.feature{
+.feature {
     display: flex;
     flex-direction: column;
     border: 1px solid lightgray;
@@ -85,14 +84,15 @@ main{
     border-radius: 4px;
 }
 
-.feature p{
+.feature p {
     font-size: 14px;
     color: gray;
     padding: 5px 10px;
     text-align: center;
     margin-bottom: 10px;
 }
-.feature button{
+
+.feature button {
     margin-top: auto;
     padding: 10px;
     width: 95%;
@@ -101,24 +101,26 @@ main{
     border-radius: unset;
     border: none;
 }
-.block{
+
+.block {
     display: flex;
     flex-direction: column;
 }
-.cool{
+
+.cool {
     background-color: black;
     min-height: 30vh;
     margin-bottom: 0;
     padding: 50px 20px;
 }
 
-.cool p{
+.cool p {
     color: white;
     padding: 20px;
     margin-bottom: 50px;
 }
 
-.coolLook{
+.coolLook {
     width: 200px;
     height: 100px;
     text-align: center;
@@ -128,32 +130,91 @@ main{
     position: relative;
     margin-top: -50px;
     margin-bottom: -60px;
-
 }
 
-.coolLook h6{
+.coolLook h6 {
     color: red;
     margin: 10px 0;
 }
-.coolLook p{
+
+.coolLook p {
     font-size: 11px;
     color: white;
 }
 
-
-.gradient{
-    background-image: linear-gradient(to right, #F0F8FF,#1F90FF);
+.gradient {
+    background-image: linear-gradient(to right, #F0F8FF, #1F90FF);
     min-height: 30vh;
     text-align: right;
     padding: 50px 20px;
 }
 
-.gradient p{
+.gradient p {
     color: white;
     padding: 20px;
 }
 
-footer{
+.imgSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.containImg {
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.textImg {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: (-50%, -50%);
+    display: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.containImg:hover .textImg {
+    display: block;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    flex-direction: column;
+}
+
+.form h5 {
+    font-size: 16px;
+    margin: 20px 0;
+    color: gray;
+}
+
+.form div {
+    margin: 10px 0;
+    color: grey;
+    display: flex;
+}
+
+.btn {
+    background-color: #C0C0C0;
+    border: none;
+}
+
+.box input {
+    margin: 0 5px 0 -2px;
+}
+
+.box label {
+    align-self: center;
+}
+
+footer {
     display: flex;
     color: gray;
     border-top: 1px solid lightgray;
@@ -162,43 +223,39 @@ footer{
     box-sizing: border-box;
 }
 
-footer div > ul >li{
+footer div>ul>li {
     margin: 10px;
 }
 
-
-.logo-img{
+.logo-img {
     align-self: center;
     width: 50px;
-    height: 40px;  
+    height: 40px;
     margin: 10px;
 }
 
-.mobile-nav{
+.mobile-nav {
     align-self: center;
 }
-.mobile-nav > img{
+
+.mobile-nav>img {
     margin: 20px;
     align-self: center;
 }
 
-.desktop-nav{
+.desktop-nav {
     position: relative;
     display: flex;
 }
 
-.desktop-nav ul{
+.desktop-nav ul {
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.desktop-nav ul li{
+.desktop-nav ul li {
     margin: 10px;
     box-sizing: content-box;
 }
-
-
-
-

@@ -1,54 +1,45 @@
 /* Mobile styles */
-@media (max-width: 768px) {
 
-    .mobile-nav > img{
+@media (max-width: 768px) {
+    .mobile-nav>img {
         position: relative;
         display: block;
-        margin: 10px;  
+        margin: 10px;
     }
-
-    .mobile-nav > img:hover {
+    .mobile-nav>img:hover {
         cursor: pointer;
         display: block;
     }
-
-    .desktop-nav > ul li:hover{
+    .desktop-nav>ul li:hover {
         background-color: thistle;
     }
-
-    .head div{
+    .head div {
         display: flex;
         flex-flow: nowrap column;
         justify-content: center;
         padding: 5px;
     }
-
-
-    .features{
+    .features {
         flex-direction: column;
         align-items: center;
     }
-
-    .feature{
+    .feature {
         width: 40%;
     }
-
-    .coolLook{
+    .coolLook {
         align-self: center;
     }
-
-
-    footer{
-        flex-flow: column;
-        
+    .containImg img {
+        width: 100%;
     }
-    
-    footer div> ul> li {
+    footer {
+        flex-flow: column;
+    }
+    footer div>ul>li {
         min-height: 1.5rem;
     }
-    footer div> ul> li:last-child{
+    footer div>ul>li:last-child {
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
-
 }
