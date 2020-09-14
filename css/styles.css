@@ -1,7 +1,7 @@
 @import 'css-reset.css';
 
 :root{
-    --header-height: 50px;
+    --header-height: 70px;
     --header-color:#3a3633;
     --header-hover-color: #44403d;
 }
@@ -71,8 +71,8 @@ body{
 }
 
 .desktop-menu>li{ 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 .desktop-menu>li:hover{
     background-color: violet;
@@ -85,14 +85,15 @@ body{
 .section-introduction{
     color: white;
     background-image: url('/imgs/bg.jpg');
-    object-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     display: flex;
+}
 
-    flex-direction: column; /*MOFIFIABLE DESKTOP*/
-    padding-bottom: 80px;
+.bigBox{
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .intro-box-1, .intro-box-2{
@@ -101,34 +102,32 @@ body{
 }
 
 .intro-box-1{
-    margin-top: 50px;
     padding-bottom: 20px;
 }
 
 .intro-box-2{
     background-color: rgba(0,0,0,0.2);
     box-sizing: content-box;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    /*margin-bottom: 80px;*/
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .title-1{
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 h2{
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: 600;
     padding-bottom: 5px;
 }
 
 .intro-paragraph{
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 
@@ -146,13 +145,15 @@ h2{
     /*padding: 0px 150px 0;*/
     justify-content: center;
     /*margin:auto;*/
+    margin-top: 20px;
 }
 
 .feature-item{
     width: 250px;
     border: 1px solid white;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px 10px 10px;
 }
 
@@ -185,10 +186,55 @@ h3{
 }
 
 
-/*************************************
+/*************************************************
+*   IMAGES
+*   
+*************************************************/
+.section-images{
+    margin: 0; padding: 0;
+    width: 100%;
+}
+
+.images-container{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+.imgBox{
+    overflow: hidden;
+    height: 230px;
+    text-align: center;
+    display: block;
+}
+
+
+.imgToZoom{
+    width: 100%;
+    position: relative;
+    top:0;
+}
+.imgBox:hover .imgToZoom{
+
+    transform: scale(1.3);
+}
+
+.captionZoom{
+    z-index: 50;
+    position: relative;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: black;
+    top: 50%;
+}
+
+
+/*************************************************
 *   MEDIA QUERIES
 *   
-**************************************/
+*************************************************/
 @media (max-width: 767px) {
     .desktop-menu{display: none;}
 }
@@ -196,10 +242,31 @@ h3{
 @media (min-width: 768px) {
     body{background-color: lightpink;}
     .mobile-menu{display: none;}
-    .section-introduction{
+    .bigBox{
+        display: flex;
         flex-direction: row;
-        padding: 150px 150px 150px;}
-    .title-1{font-size: 50px;}
+        margin: 250px 150px 250px;
+        border: 8px solid white;}
+    .intro-box-1{
+        display: flex;
+        align-items: center;
+    }
+    .title-1{
+        font-size: 5rem; 
+        line-height: 7rem; 
+        padding: 0; margin: 0;}
+    h2{
+        font-size: 3rem; 
+        line-height: 4rem; 
+        border-bottom: 1px white dashed;
+        padding-bottom: 2rem;
+        padding-top: 2rem;}
+    .intro-paragraph{
+        column-count: 2; 
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 2rem;}
     .features-container{flex-direction: row;}
     .feature-item{margin-right: 40px;}
     .feature-item:last-of-type{margin-right: 0;}
