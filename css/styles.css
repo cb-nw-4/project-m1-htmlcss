@@ -485,11 +485,6 @@ top: 20%;
             text-align: center;
         }
         .imggrid{
-            /* display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 0;
-            overflow: hidden;
-            margin-inline-end: 0px; */
             object-fit: cover;
             display:flex;
             flex-wrap: wrap;
@@ -534,4 +529,29 @@ top: 20%;
             color:#3a3633;
             padding:10px;
         }
+}
+
+@media(max-width: 900px) and (min-width: 767px){
+    .imggrid{
+        object-fit: cover;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+    
+    }
+    .imggrid>div{
+        height:45vh;
+        width:calc(50% - 0px);
+        overflow: hidden !important;
+    }
+    .imgs{
+        object-fit: cover;
+        height:100%;
+        width: 100%;
+        transition: all .2s ease;
+    
+    }
+    .imgs:hover{
+        transform: scale(1.3);
 }
