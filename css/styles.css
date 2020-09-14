@@ -15,8 +15,8 @@ body {
 }
 
 h1 {
-    font-size: 24px;
-    padding: 20px;
+    font-size: 30px;
+    padding: 30px 20px 5px 20px;
     font-weight: bold;   
 }
 
@@ -24,7 +24,17 @@ h2 {
     font-size: 18px;
     font-weight: bold;    
 }
+h3{
+    font-size: 16px;    
+    padding: 20px;
+}
 
+h4 {
+    color: red;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
 h5 {
     font-size: 13px;
     font-weight: bold;
@@ -32,7 +42,7 @@ h5 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 12px;
 }
 /* navigation bar style */
 header{
@@ -98,6 +108,16 @@ header{
     /* line-height: 1.4; */
 }
 
+.section1 h1 {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.section1-text p{
+    font-size: 16px;
+ }
+
 /* Feature section */
 .section-feature {
     display: flex;
@@ -111,51 +131,98 @@ header{
     position: relative;
     width: 225px;
     
-    height: 200px;
+    height: 225px;
     border: solid 1px #f1f0ef;
     border-radius: var(--border-radius);
     box-shadow: 0px 2px 4px 0px #DFDFDF;
     text-align: center;
     margin: 15px;
     padding: 15px;       
-}
+}  
 
 .feature-container p {
     color: var(--color-med-gray);
     padding: 5px;
+    overflow: hidden;   
+    margin-bottom: 10px; 
+
 }
 
 .feature-button {   
     margin-top: auto;
     color: white;
     background-color: var(--color-dark-gray);
-    padding: 10px;
-}   
+    padding: 10px;   
+    border-radius: 4px;
+} 
+  /*cool text section  */
+
+.section-cool {
+    background-color: var(--color-dark-gray);
+    color: white;
+    box-sizing: border-box;
+    padding: 50px 0px;
+    height: 300px;
+    position: relative;
+}
+
+.cool-text {
+    /* margin-left: 10px; */
+    width: 90%;
+}
+.cool-box {
+    background-color: var(--color-dark-gray);
+    border: solid 7px white;
+    padding: 15px;
+    width: 200px;   
+    text-align: center;;
+    position: absolute;
+    top: 250px;  
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*gradient section  */
+.section-gradient {
+    background-image: linear-gradient(to right, #fff, DodgerBlue);
+    color: white;
+    box-sizing: border-box;
+    padding: 50px 0px;
+    height: 300px;
+    text-align: right;
+}
+
 
 .dropdown:hover  .nav-dropdown {   
     display: flex;  
 } 
 
 .nav-dropdown  > a:hover {
-   background-color: #494440;
+    background-color: #494440;
 } 
 
+/* desktop view */
 @media (min-width: 768px) {
     h1 {
-        font-size: 54px;
-        padding-bottom: 60px;
-        padding-top: 60px;
-        /* align-self: center; */
-        flex-grow: 2;
+        font-size: 52px;
+        padding-bottom: 20px;
+        padding-top: 20px;        
     } 
+
 
     h2 {
         font-size: 36px;
         
     }
 
+    h3{
+        font-size: 18px;    
+        padding: 20px;
+    }
+    
+
     p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
 /* navigation bar desktop*/
@@ -183,11 +250,18 @@ header{
         height: 600px;
     }
 
+    .section1 h1{
+        font-size: 54px;
+        padding-bottom: 60px;
+        padding-top: 60px;        
+    }
+
+
     .section1-container{
         display: flex;
         max-width: 80%;
         /* margin: auto; */
-        border: solid 5px white;
+        border: solid 7px white;
        
     }
 
@@ -205,6 +279,7 @@ header{
     } 
 
     .section1-text p{
+       font-size: 12px;
        padding: 25px 0px 10px 0px;
     }
 
@@ -212,10 +287,33 @@ header{
     .section-feature {
         flex-direction: row;
         justify-content: center;;
-        flex-wrap: wrap;
-        
-        
-
+        flex-wrap: wrap;     
    }
+   .feature-button {  
+    border-radius: 0px;
+} 
+
+   /*cool text section  */
+
+   .section-cool {
+    height: 400px;
+}
+.cool-text {  
+    margin-left: 10px; 
+    width: 80%;
+    text-overflow: hidden;
+}
+   .cool-box {    
+    top: 340px;  
+    left: 30px;
+    transform: translate(0%);
+}
+
+/* gradient section */
+.section-gradient {   
+    padding: 50px 10px;
+    height: 400px;
+    
+}
 
   }
