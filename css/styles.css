@@ -35,8 +35,8 @@ nav a{
     list-style: none;
 }
 
-a{
-    margin-top: 10px;
+ul, a{
+    margin-top: 5px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 8px;
@@ -45,6 +45,25 @@ a{
     text-decoration: none;
     color: white;
 }
+ul{display: flex; list-style: none;}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    float:right;
+    color:white; 
+    background-color:black;
+    }
+    .dropdown-content>a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: right;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
 .bg1{
     width: calc(100% - 0px);
@@ -241,13 +260,25 @@ section{
     border: 5px solid white;
     z-index: 1;
 }
+.middle:hover{
+    animation-name: rotate;
+    animation-duration:  2s;
+    text-transform: uppercase;
+}
+@keyframes rotate{
+    from{transform:scale(1) rotate(0deg);}
+    25%{transform:scale(1.2) rotate(90deg);}
+    50%{transform:scale(1.5) rotate(180deg);}
+    75%{transform:scale(1.2) rotate(270deg);}
+    to{transform:scale(1) rotate(360deg);}
+}
 .textsection3{
     position: relative;
 top: 20%;
 
 }
 .textsection3>h1{
-   padding: 5px;
+    padding: 5px;
     font-size: 12px;
     color: red;
     text-align: center;
@@ -258,6 +289,8 @@ top: 20%;
     color:white;
     text-align: center;
 }
+
+/* ---------------Image section--------------- */
 
 .imggrid{
     object-fit: cover;
@@ -331,6 +364,15 @@ top: 20%;
         padding: 20px;
         z-index: 1;
         }
+        ul{display: block;}
+        li{padding:5px;}
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width:100vw;
+        } 
+        /* .dropdown-content{
+            float: right;
+        } */
         a{
             margin-left: 55px;
         }
@@ -554,4 +596,5 @@ top: 20%;
     }
     .imgs:hover{
         transform: scale(1.3);
+}
 }
