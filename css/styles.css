@@ -63,7 +63,7 @@ ul{display: flex; list-style: none;}
 
     .dropdown:hover .dropdown-content {
         display: block;
-      }
+    }
 
 .bg1{
     width: calc(100% - 0px);
@@ -117,7 +117,7 @@ section{
     display: flex;
     border-top: 1px dashed white;
 }
-
+/* --------------feature blocks------------ */
 .blocks{
     display:flex;
     justify-content: space-evenly;
@@ -204,10 +204,7 @@ section{
     padding: 10px 100px 10px 20px;
 }
 
-
-
-
-/* ------------------------- */
+/* ------------gradient--------------- */
 .gradient{
     position:relative;
     max-width:100vw;
@@ -247,9 +244,7 @@ section{
 
 }
 
-
-
-/* ------------------------- */
+/* ----------middle section--------------- */
 .middle{
     position: absolute;
     top: 45%;
@@ -315,6 +310,7 @@ top: 20%;
 .imgs:hover{
     transform: scale(1.3);
 }
+/* --------------mini form----------------- */
 .formarea{
     display: flex;
     flex-direction: column;
@@ -333,7 +329,7 @@ top: 20%;
     outline:none;
     border:0;
 }
-
+/* ------------------footer--------------- */
 .footer{
     display:flex;
     justify-content: space-evenly;
@@ -376,7 +372,7 @@ top: 20%;
         a{
             margin-left: 55px;
         }
-    /* -------background and first text------ */
+/* ----------background and first text------ */
         .textoverlay{
             top: 50px;
             margin:0;
@@ -437,7 +433,7 @@ top: 20%;
             height: 220px;
         }
 
-        /* --------new BG and gradient-------- */
+/* -----------------new BG-------------- */
         .bgetgrad{
             display: flex;
             flex: 1;
@@ -470,7 +466,7 @@ top: 20%;
             color: white;
             padding: 10px 100px 10px 20px;
         }
-        /* ------------------------- */
+/* --------------gradient------------------ */
         .gradient{
             position:relative;
             max-width:100vw;
@@ -498,7 +494,7 @@ top: 20%;
         }
 
 
-        /* ------------------------- */
+/* ----------mid section--------------- */
         .middle{
             position: absolute;
             top: 45%;
@@ -526,6 +522,7 @@ top: 20%;
             color:white;
             text-align: center;
         }
+/* -----------image grid-------------- */
         .imggrid{
             object-fit: cover;
             display:flex;
@@ -542,6 +539,7 @@ top: 20%;
             object-fit: cover;
             transition: all .2s ease;
         }
+/* --------------mini form------------ */
         .formarea{
             display: flex;
             flex-direction: column;
@@ -560,7 +558,7 @@ top: 20%;
             outline:none;
             border:0;
         }
-
+/* -----------------footer---------------- */
         .footer{
             display:block;
             margin:20px;
