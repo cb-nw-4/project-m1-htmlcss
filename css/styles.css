@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.2; 
 }
 
 h1 {
@@ -35,16 +36,17 @@ h3 {
 }
 
 h4 {
-    font-size: large;
+    font-size: medium;
+    line-height: 1.2;
 }
 
 h5 {
-    font-size: medium;
+    font-size: small;
 }
 
 h6,
 p {
-    font-size: small;
+    font-size: smaller;
 }
 
 p {
@@ -168,7 +170,7 @@ header {
     padding: 20px;
 }
 
-.falcon-subinfo > h2, p {
+.falcon-subinfo > h2, .falcon-subinfo > p {
     color: white;
     padding: 2px
 }
@@ -176,11 +178,17 @@ header {
 
 /* features section */
 #features {
-    margin: 50px;
+    margin: 50px 50px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#features > h3 {
+    font-weight: bolder;
+    color: var(--color-dark-gray);
+    margin-bottom: 30px;
 }
 
 .feature-box {
@@ -200,12 +208,6 @@ header {
 
 .feature-icon {
     margin: 15px;
-}
-
-h3 {
-    font-weight: bolder;
-    color: var(--color-dark-gray);
-    margin-bottom: 30px;
 }
 
 .feature-text {
@@ -228,6 +230,66 @@ h3 {
     border: transparent;
     position: relative;
 }
+
+
+/* Advantages section */
+
+#advantages > .cool-text-area, #advantages > .gradient-area {
+    margin: 0px;
+    height: 220px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cool-text-area {
+   background-color: var(--color-dark-gray); 
+}
+
+.cool-text-area > h1, .cool-text-area > h4, .gradient-area > h1, .gradient-area > h4 {
+    margin-top: 20px;
+}
+
+.ani-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ani-box {
+    height: 80px;
+    width: 200px;
+    background-color: var(--color-dark-gray);
+    color: white;
+    border: solid 4px white;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    
+}
+
+.ani-box-contents > h5 {
+    font-size: medium;
+    color: red;
+}
+
+.ani-box-contents > p {
+    font-size: x-small;
+}
+
+
+.gradient-area {
+    background-image: linear-gradient(to right, #fff, #2497F3);
+}
+
+.gradient-area > h1, .gradient-area > h4 {
+    text-align: right;
+}
+
 
 
 
@@ -303,8 +365,22 @@ h3 {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+    }
+
+    /* advantages section */
+
+    #advantages > .cool-text-area, #advantages > .gradient-area {
+        height: 350px;
+        padding: 30px;
+    }    
+
+    .ani-box-container {
+        justify-content: flex-start;
+    }
+
+    .ani-box {
+        margin-left: 20px;
+    }
 
 
-
-}
 }
