@@ -7,7 +7,6 @@
 }
 
 body{
-    background-color: yellow;
     font-family:'Poppins', sans-serif;
 
 }
@@ -137,20 +136,17 @@ h2{
 **********************************************/
 
 .features-container{
-    background-color: white;
     display: flex;
     flex-direction: column;
-    /*flex-direction: row;*/
-    /*padding: 0px 20px 30px;*/
-    /*padding: 0px 150px 0;*/
     justify-content: center;
-    /*margin:auto;*/
-    margin-top: 20px;
+    width: 100%;
+    padding-top: 20px;
 }
 
 .feature-item{
     width: 250px;
-    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px 1px #bfbfbf;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -182,9 +178,30 @@ h3{
 }
 
 .feature-item>img{
-    height: 35px;
+    height: 50px;
 }
 
+
+/*************************************************
+*   SOME COOL TEXT
+*   
+*************************************************/
+.cool-text-container{
+    background-color: var(--header-color);
+    color: white;
+    padding: 50px 50px 250px;*/
+}
+
+.cool-text-container > h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+    padding: 5rem 0 5rem;
+}
+.cool-text-container > p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
 
 /*************************************************
 *   IMAGES
@@ -230,6 +247,53 @@ h3{
     top: 50%;
 }
 
+/*************************************************
+*   MAILING LIST
+*   
+*************************************************/
+.mailing-section{
+    display: flex;
+    justify-content: center;
+}
+
+.mailing-container{
+    margin-bottom: 300px;
+    margin-top: 300px;
+    font-size: 1rem;
+}
+
+.input-container{
+    display: flex;
+    margin: 1rem 0px 1rem;
+    height: 3rem;
+    width: 320px;
+}
+
+.input-area{
+    margin: 0;
+    padding: 0;
+    border: 2px solid #9e9e80;
+    border-radius: 4px 0px 0px 4px;
+    height: 100%;
+    width: 260px;
+    box-sizing: border-box;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e9e80;
+    width: 70px;
+    border-radius: 0 4px 4px 0;
+}
+
+.sendIcon{
+    position: relative;
+    width: 30px;
+}
+
+.icon-container:hover{cursor: pointer;}
 
 /*************************************************
 *   MEDIA QUERIES
@@ -240,7 +304,6 @@ h3{
 }
 
 @media (min-width: 768px) {
-    body{background-color: lightpink;}
     .mobile-menu{display: none;}
     .bigBox{
         display: flex;
