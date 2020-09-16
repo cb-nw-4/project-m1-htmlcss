@@ -363,6 +363,7 @@ color: red; }
         display:block;
         background-color: #3a3633;
         width:100%;
+        position:fixed;
     }
 
     .nav_container {
