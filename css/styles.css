@@ -120,7 +120,7 @@ html {
     }
 
 
-    .feature {
+    .featureBox {
         box-shadow: 0 0 1px;
         width: 57%;
         align-self: center;
@@ -130,7 +130,7 @@ html {
 
     .featureImg {
         margin: 20px;
-        width: 30px;
+        width: 6vw;
     }
 
     .featureH2 {
@@ -161,10 +161,9 @@ html {
         outline: none;
     }
 
-    /* SOME COOL TEXT and GRADIENT SECTION */
+    /* SECTION 3 */
 
     .section3 {
-        border: black solid 2px;
         position: relative;
     }
 
@@ -275,13 +274,15 @@ html {
             background-color: var(--color-dark-gray);
             width: 100%;
             height: auto;
+            /* position: fixed;
+            z-index: 3; */
         }
     
         .mobileNav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 100vw;
+            width: 100%;
         }
     
         .logo {
@@ -366,6 +367,169 @@ html {
         /* border: red solid 1px; */
         line-height: 130%;
         padding-top: 10%;
+    }
+
+    /* SECTION 2 */
+
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 100px;
+    }
+
+
+    .featureBox {
+        box-shadow: 0 0 1px;
+        width: calc(100% / 3);
+        align-self: center;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .featureImg {
+        margin: 20px;
+        /* width: 30px; */
+        width: 3vw;
+    }
+
+    .featureH2 {
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .featureP {
+        padding: 0 24px;
+        color: var(--color-med-gray);
+        font-size: 0.9em;
+        line-height: 20px;
+    }
+
+    .featureBtn {
+        font-size: 1em;
+        margin: 30px 0;
+        width: 90%;
+        height: 40px;
+        border-radius: var(--border-radius);
+        background-color: var(--color-dark-gray);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .featureBtn:focus {
+        outline: none;
+    }
+
+    /* SECTION 3 */
+
+    .section3 {
+        position: relative;
+    }
+
+    .s3 {
+        color: white;
+    }
+
+    .coolH1 {
+        font-weight: bold;
+        font-size: 2em;
+        padding-top: 80px;
+    }
+
+    .coolP {
+        padding-top: 40px;
+        padding-right: 150px;
+        line-height: 25px;
+    }
+
+    
+    .coolText {
+        background-color: var(--color-dark-gray);
+        height: 500px;
+        padding-left: 15px;
+    }
+
+    .gradient {
+        background-color: skyblue;
+        height: 500px;
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .gradientH1 {
+        font-weight: bold;
+        font-size: 2em;
+        padding-top: 80px;
+    }
+
+    .gradientP {
+        padding-top: 40px;
+    }
+
+    .centerCool{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+        margin-left: 3%;
+    }
+    .centerCool .text {
+        border: white 6px solid;
+        background-color: var(--color-dark-gray);
+        text-align: center;
+        padding: 30px 0 25px 0;
+        /* width: 50%; */
+        width: 220px;
+        align-self: center;
+        /* How to center this properly? (TOP) */
+    }
+
+    .centerCoolH2 {
+        color: darkred;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-bottom: 15px;
+    }
+
+    .centerCoolP {
+        font-size: 0.8em;
+    }
+
+    /* IMAGE SECTION */
+
+    .section4 {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .section4Img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section4P {
+        color: white;
+        text-shadow: 1px 1.1px var(--color-med-gray);
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section4Div {
+        box-sizing: border-box;
+        width: calc(100%/3);
+        position: relative;
     }
 
 }
