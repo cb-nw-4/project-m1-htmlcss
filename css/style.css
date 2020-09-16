@@ -1,0 +1,239 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    font-weight: 300;
+}
+
+/* Header Below */
+
+.logo {
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+    margin-right: auto;
+}
+
+/* nav menu below */
+
+.header * {
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;
+  }
+  
+  .header strong {
+    margin-left: 5px;
+    margin-right: auto;
+    font-size: 1.6rem;
+  }
+  
+  .header,
+  .header .dropdown__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header li {
+    padding: 10px;
+    position: relative;
+  }
+  
+  .header li:hover {
+    background: #d2f2fc;
+  }
+  
+  .header .dropdown__category .dropdown__menu {
+    display: none;
+    position: absolute;
+    background: #ebfaff;
+    width: 200px;
+    top: 50px;
+    right: 0;
+  }
+  
+  .header .dropdown__category:hover .dropdown__menu {
+    display: block;
+  }
+
+/* Section: Hero */
+
+#hero {
+    margin-top: 0px;
+    padding: 25px 0px;
+    width: 100%;
+    height: auto;
+
+
+    background-image: url(/imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.hero-right {
+    background-color: rgba(55, 45, 45, 0.5);
+    padding: 0px 15px;
+}
+
+
+/* Section Features */
+
+.features-main {
+    margin: 35px 60px;
+
+}
+
+.feature {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 8px;
+    margin-top: 20px;
+
+    border: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+
+    /* box-shadow: 1px 1px 20px; */
+    /* Not mine borrowed it from CSS-TRICKS */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.feature-button {
+    width: 100%;
+    height: 40px;
+    /* padding: 50px auto; */
+    font-size: medium;
+    background-color: slategrey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Section Cool-Text */
+
+.cool-text-main {
+    margin-top: 25px;
+}
+
+.cool-text-top {
+    background-color: slategray;
+    color: white;
+    
+    padding: 45px 20px;
+}
+
+.cool-text-bottom {
+    background-image: linear-gradient(90deg, rgb(255, 255, 255),rgb(133, 178, 179));
+    color: white;
+
+    padding: 45px 20px;
+
+    text-align: right;
+}
+
+/* Section Gallery */
+
+.gallery-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    min-width: 400px;
+    /* overflow: hidden; */
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-image img{
+    min-width: 400px;
+    height: auto;
+    transition: all ease 0.2ms;
+}
+
+.gallery-image:hover img{
+    transform: scale(1.2);
+}
+
+
+
+/* .gallery-main img {
+    margin: 0px 0px;
+    width: 100%;
+    height: auto;
+    transition: 0.2s;
+    overflow: hidden;
+} */
+
+/* .gallery-main img:hover{
+    transform: scale(1.5);
+} */
+
+
+
+
+/* Section Mailling List */
+
+.mailling-list-main {
+    width: 100%;
+    padding: 25px auto;
+    display: block;
+    margin: 100px auto;
+    text-align: center; 
+    background-color: rgb(91, 25, 14);
+}
+
+
+/* Section Footer */
+
+.footer-main {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-col {
+    margin-top: none;
+    list-style-type: none;
+
+}
+
+.footer-li {
+    font-weight: 200;
+}
+
+.footer-li a {
+    text-decoration: none;
+}
+
+.footer-li a:link {
+    color: rgb(45, 52, 60);
+}
