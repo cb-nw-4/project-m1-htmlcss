@@ -11,30 +11,22 @@
 
   <body>
   <header>
-    <div class="navbar">
-      <img class="logo" src="imgs/logo.svg" alt="logo" />
-      <!-- <div class="dropdown">
-      <img class="dropbtn" src="imgs/menu.svg" alt="menu" />
-        <ul class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </ul>
-      </div>
-    </div>   -->
-      
-      
-      
-      <div class="menu-btn">
-        <img class="menu" src="imgs/menu.svg" alt="menu" />
-      </div>
-    </div>
-    <div class="navigation">
-      <ul class="nav">
+    <div class="header-bar">
+      <img class="logo" src="imgs/logo.svg" />
+      <img class="menu-btn" src="imgs/menu.svg" />
+      <ul class="navigation">
         <li class="nav-item"><a href="#features">Features</a></li>
         <li class="nav-item"><a href="#advantages">Advantages</a></li>
         <li class="nav-item"><a href="#gallery">Gallery</a></li>
         <li class="nav-item"><a href="#products">Products</a></li>
+      </ul>
+    </div>
+    <div class="dropdown-menu">
+      <ul class="dropdown-navigation">
+        <li class="dropdown-item"><a href="#features">Features</a></li>
+        <li class="dropdown-item"><a href="#advantages">Advantages</a></li>
+        <li class="dropdown-item"><a href="#gallery">Gallery</a></li>
+        <li class="dropdown-item"><a href="#products">Products</a></li>
       </ul>
     </div>
     <div class="falcon-hero">
@@ -91,19 +83,42 @@
     </section>
 
     <section id="gallery"> <!--Maybe CSS grid can help here?-->
-      <img src="imgs/tesla.jpg" alt="tesla" />
-      <img src="imgs/procat.jpg" alt="cool cat" />
-      <img src="imgs/hyperloop.jpg" alt="hyperloop" />
-      <img src="imgs/sneakycat.jpg" alt="snaeky cat" />
-      <img src="imgs/falconrocket.jpeg" alt="falcon rocket" />
-      <img src="imgs/funnycat.jpg" alt="funny cat" />
+      <div class="gallery-img">
+        <img src="imgs/tesla.jpg" alt="tesla" />
+        <h2 class="gallery-text">Our flagship car: the Model S</h2>
+      </div>   
+      <div class="gallery-img">
+        <img src="imgs/procat.jpg" alt="cool cat" />
+        <h2 class="gallery-text">Cool cat</h2>
+      </div> 
+      <div class="gallery-img">
+        <img src="imgs/hyperloop.jpg" alt="hyperloop" />
+        <h2 class="gallery-text">Introducing the Hyperloop</h2>
+      </div>  
+      <div class="gallery-img">
+        <img src="imgs/sneakycat.jpg" alt="sneaky cat" />
+        <h2 class="gallery-text">So sneaky</h2>
+      </div>  
+      <div class="gallery-img">
+        <img src="imgs/falconrocket.jpeg" alt="falcon rocket" />
+        <h2 class="gallery-text">BFR - Big Falcon Rocket</h2>
+      </div>  
+      <div class="gallery-img">
+        <img src="imgs/funnycat.jpg" alt="funny cat" />
+        <h2 class="gallery-text">So much fun</h2>
+      </div>  
+        
+        
     </section>
 
     <section id="register">
       <form>
-        <label for="email">Register for our mailing list:</label>
-        <input type="email" id="email" name="email">
-        <input type="checkbox" id="checkbox">
+        <label for="email">Register to our mailing list:</label>
+        <div class="input-container">
+          <input type="email" class="email" name="email">
+          <button class="email-btn"><img class="send" src="imgs/icon_send.svg" /></button><br>
+        </div>  
+        <input type="checkbox" class="checkbox-btn">
         <label for="checkbox">Send me daily cat images</label>
       </form>
     </section>
