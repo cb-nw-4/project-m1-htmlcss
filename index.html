@@ -39,19 +39,19 @@
   </section>
   <section class="section-feature">
     <div class="feature-container">
-      <img src="../imgs/icon_check.svg" alt="icon_check" class="feature-icon"/>
+      <img src="imgs/icon_check.svg" alt="icon_check" class="feature-icon"/>
       <h5>Amazing Feature 1</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       <button class="feature-button">Get it</button>
     </div>
     <div class="feature-container">
-      <img src="../imgs/icon_reload.svg" alt="icon_reload" class="feature-icon"/>
+      <img src="imgs/icon_reload.svg" alt="icon_reload" class="feature-icon"/>
       <h5>Amazing Feature 2</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
       <button class="feature-button">Sell it</button>
     </div>
     <div class="feature-container">
-      <img src="../imgs/icon_fingerprint.svg" alt="icon_fingerprint" class="feature-icon"/>
+      <img src="imgs/icon_fingerprint.svg" alt="icon_fingerprint" class="feature-icon"/>
       <h5>Amazing Feature 3</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
       <button class="feature-button">Do it</button>
@@ -73,17 +73,36 @@
       <h3>Lorem ipsum ?</h3>
     </div>
   </section>
-  <section class="gallery-section">
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
+  <section class="section-gallery">
+    <div class=gallery-container>
+    <ul class="gallery-list" > 
+      <li><img src="Imgs/tesla.jpg" alt="tesla" class="image"/></li>
+      <li><img src="Imgs/procat.jpg" alt="procat" class="image"/></li>
+      <li><img src="Imgs/hyperloop.jpg" alt="hyperloop" class="image"/></li>
     </ul>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
+    <ul class="gallery-list">
+      <li><img src="Imgs/sneakycat.jpg" alt="sneakycat" class="image"/></li>
+      <li><img src="Imgs/falconrocket.jpeg" alt="falconrocket" class="image"/></li>
+      <li><img src="Imgs/funnycat.jpg" alt="funnycat" class="image"/></li>
     </ul>
+    </div>
+    <form>
+      <div>
+      <label for="email">Register to our mailing list:</label>
+      <div class="email-container">
+      <input type="email" required class="text-field" id="email"/>   
+      <button class="send"><img src="Imgs/icon_send.svg"></button> 
+    </div>
+      <input type="checkbox" class="checkbox" id="send-daily" /> 
+      <label for="send-daily" class="checkbox-label"> Send me daily cat images </label>
+    
+   
+      <!-- <label class="checkbox-label">
+        <input type="checkbox" /> Send me daily cat images
+      </label> -->
+    </div>
+    </form>
+
   </section>
   </body>
 </html>
