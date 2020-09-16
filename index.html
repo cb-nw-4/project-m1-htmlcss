@@ -10,6 +10,172 @@
   </head>
 
   <body>
-    <!-- write some HTML! -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#"><img src="imgs/logo.svg" alt="logo" width="30"></a></li> 
+        <li class="dropdown"><a href="#" class="dropbtn"><img src="imgs/menu.svg" alt="menu" width="30"></a>
+        <div class="dropdown-content">
+          <a href="#features">Features</a>
+          <a href="#advantages">Advantages</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#products">Products</a>
+        </div> 
+        </li> 
+      </ul>
+    </nav>
+
+    <nav class="navbar_desktop">
+      <div class="nav_container">
+      <div><a href="#header"><img src="imgs/logo.svg" alt="logo" width="30"></a></div>
+      <div>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#products">Products</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav> 
+
+    <header>
+      <div id="header" class="header-background">
+        <div class="header-text">
+          <div class="header-title"><h1>Introducing Falcon 9</h1></div>
+          <div class="header-subtext">
+            <h2>We make dreams come true</h2>
+            <div class="paragraphs">
+              <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet ullamcorper ex, id tincidunt ipsum. In hac habitasse platea dictumst. Sed in enim nisi. Vivamus sed vulputate nisl. Integer maximus odio metus, eget volutpat nulla porttitor sed. Etiam vitae sapien vitae lacus lobortis fringilla. Suspendisse semper arcu eget velit sollicitudin, quis fermentum sapien cursus. Nunc eu libero ex.</p></div>
+              <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet ullamcorper ex, id tincidunt ipsum. In hac habitasse platea dictumst. Sed in enim nisi. Vivamus sed vulputate nisl. Integer maximus odio metus, eget volutpat nulla porttitor sed. Etiam vitae sapien vitae lacus lobortis fringilla. Suspendisse semper arcu eget velit sollicitudin, quis fermentum sapien cursus. Nunc eu libero ex.</p></div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </header>
+
+    <main> 
+
+      <div id="features" class="features"> 
+        <div class="feature_item"> 
+          <img src="imgs/icon_check.svg" alt="check_icon">
+          <label>Amazing feature 1</label>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at nulla maximus leo tincidunt pharetra in eget mi. Vivamus tincidunt sem non feugiat auctor. Donec ut dui efficitur, tempus turpis a, tincidunt sapien. Vivamus malesuada leo ut est congue, nec laoreet nisi convallis. Donec sed elit ac justo congue porta eget non lacus.</p>
+          <button type="button" class="feature_button">Get it</button>
+        </div>
+
+        <div class="feature_item"> 
+          <img src="imgs/icon_reload.svg" alt="reload_icon">
+          <label>Amazing feature 2</label>
+          <p>Donec dictum blandit sagittis. Nullam ut libero sed nunc iaculis laoreet eget non erat. Aenean a sem vulputate, semper mi a, elementum quam.</p>
+          <button type="button" class="feature_button">Sell it</button>
+        </div>
+
+        <div class="feature_item"> 
+          <img src="imgs/icon_fingerprint.svg" alt="fingerprint_icon">
+          <label>Amazing feature 3</label>
+          <p>Etiam eget vestibulum nibh, quis tempus nunc. Vestibulum dui enim, vehicula et dapibus vel, hendrerit ac ipsum.</p>
+          <button type="button" class="feature_button">Do it</button>
+        </div>
+      </div>
+
+      <div id="advantages">
+        <div class="adv adv1">
+          <h2>Some cool text</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie fringilla metus, sit amet auctor nisi placerat at.</p>
+        </div>
+        <div class="adv2">
+          <h4>This looks cool</h4>
+          <p>Hover me if you like random animations</p>
+        </div>
+        <div class="adv adv3">
+          <h2>Slick gradient</h2>
+          <p>Lorem ipsum?</p>
+        </div>
+      </div>
+
+      <div id="gallery"> 
+        <div class="row1">
+          <div class="container">
+            <div class="img_holder img1">
+              <div class="center_text">Our flagship car: The model S</div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="img_holder img2">
+              <div class="center_text">Cool cat</div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="img_holder img3">
+              <div class="center_text">Introducing: The Hyperloop</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row2">
+        <div class="container">
+          <div class="img_holder img4">
+            <div class="center_text">So sneaky</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="img_holder img5">
+            <div class="center_text">BFR - Big Falcon Rocket</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="img_holder img6">
+            <div class="center_text">So much fun</div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div id="products">
+        <form class="form"> 
+            <div class="form_container"> 
+              <label for="mailing_list">Register to our mailing list:</label>
+                <div class="input_group"> 
+                  <input class="mail_input" type="text" name="email" id="mailing_list" value required>
+                  <button class="send_button"><img src="imgs/icon_send.svg"></button>
+                </div>
+              <label for="subscribe_checkbox">
+                <input class="subscribe_checkbox" type="checkbox" name="subscribe" id="subscribe_checkbox">
+                <span>Send me daily cat images</span>
+              </label>
+            </div>
+        </form>
+      </div>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container"> 
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal notes</a>
+        <a href="#">Copyright</a>
+      </div>
+      <div class="footer_container"> 
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal notes</a>
+        <a href="#">Copyright</a>
+      </div>
+      <div class="footer_container"> 
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal notes</a>
+        <a href="#">Copyright</a>
+      </div>
+      <div class="footer_container"> 
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal notes</a>
+        <a href="#">Copyright</a>
+      </div>
+    </footer> 
+
   </body>
 </html>
