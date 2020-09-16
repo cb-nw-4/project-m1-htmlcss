@@ -23,72 +23,84 @@ html {
 
     nav {
         background-color: var(--color-dark-gray);
-        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        /* border: red solid 3px; */
     }
 
     .mobileNav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px; /* NAV SIZE */
+        width: 100vw;
+        position: relative;
     }
 
     .logo {
-        width: 100px;
-        height: 100%;
+        width: 10vw;
     }
 
     .hamburger {
         background-color: transparent;
-        width: 80px;
-        height: 100%;
+        width: 15vw;
         border: none;
     }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* display: none; */
-        border: red solid 2px;
-        /* How to hover the UL? */
+    .menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-dark-gray);
     }
 
     .menuItems {    
-        color: white;
         font-size: 20px;
+        padding: 10px;
+        text-align: center;
+
+    }
+    .menuItems > a{
+        color: white;
         text-decoration: none;
-        border: blue solid 1px;
-        /* margin: 100px 0; */
-        /* How to add padding/margin top/bot between items? */
     }
 
+    .hamburger:hover ~ .menu, .menu:hover{
+        display: block;
+        z-index: 2;
+    }
 
     /*FIRST SECTION*/
 
     .section1 {
-        background-image: url("../imgs/bg.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%;
+        position: relative;
+        height: 420px;
+    }
+    .section1Img {
         width: 100%;
-        height: 410px;
+        height: 100%;
+    }
+
+    .wholeIntro {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
         color: white;
     }
 
     .introH1 {
         font-weight: bold;
-        font-size: 1.8em;
+        font-size: 1.5em;
         padding: 60px 0 30px 10px;
     }
 
     .introH2 {
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1.3em;
         padding-bottom: 8px;
     }
 
@@ -96,12 +108,10 @@ html {
         background-color: rgba(0,0,0,0.3);
         padding: 15px 0 15px 10px;
         width: 100%;
-        height: auto;
-        border: red solid 2px;
-        /* background color overflow on the right sometimes */
+        font-size: 1em;
     }
 
-    /* FEATURES */
+    /* SECTION 2 */
 
     .section2 {
         display: flex;
@@ -109,31 +119,35 @@ html {
         padding: 20px 0;
     }
 
-    .featureImg {
-        margin: 15px 0;
-    }
 
     .feature {
         box-shadow: 0 0 1px;
-        width: 50%;
+        width: 57%;
         align-self: center;
         text-align: center;
         margin: 15px 0;
     }
 
+    .featureImg {
+        margin: 20px;
+        width: 30px;
+    }
+
     .featureH2 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         font-weight: bold;
     }
 
     .featureP {
         padding: 0 24px;
         color: var(--color-med-gray);
+        font-size: 0.9em;
+        line-height: 20px;
     }
 
     .featureBtn {
         font-size: 1em;
-        margin: 20px 0;
+        margin: 30px 0;
         width: 90%;
         height: 40px;
         border-radius: var(--border-radius);
@@ -179,7 +193,7 @@ html {
 
     .gradient {
         background-color: skyblue;
-        height: 255px;
+        height: 300px;
         text-align: right;
         padding-right: 15px;
     }
@@ -194,18 +208,26 @@ html {
         padding-top: 40px;
     }
 
-    .centerCool {
-        background-color: var(--color-dark-gray);
+    .centerCool{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: white;
-        /* border: white 6px solid; */
+    }
+    .centerCool .text {
+        border: white 6px solid;
+        background-color: var(--color-dark-gray);
         text-align: center;
         padding: 30px 0 25px 0;
-        width: 50%;
-        position: absolute;
-        top: 45%;
-        left: 25%;
-        border: red solid 2px;
-        /* How to center this properly? */
+        /* width: 50%; */
+        width: 220px;
+        align-self: center;
+        /* How to center this properly? (TOP) */
     }
 
     .centerCoolH2 {
@@ -213,8 +235,6 @@ html {
         font-weight: bold;
         font-size: 1.1em;
         padding-bottom: 15px;
-        border: red solid 2px;
-        /* How to make the text looks like the model? */
     }
 
     .centerCoolP {
@@ -225,11 +245,8 @@ html {
 
     .section4Div {
         position: relative;
-        display: flex;
-        border: red solid 2px;
+        margin: -3px 0;
     }
-
-    /* How to "cut" the image (height)? */
 
     .section4Img {
         width: 100%;
@@ -238,9 +255,117 @@ html {
         color: white;
         text-shadow: 1px 1.1px var(--color-med-gray);
         position: absolute;
-        align-self: center;
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* DESKTOP VIEW */
+
+@media (min-width: 900px) {
+        /* NAV BAR */
+
+        nav {
+            background-color: var(--color-dark-gray);
+            width: 100%;
+            height: auto;
+        }
+    
+        .mobileNav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+        }
+    
+        .logo {
+            width: 4vw;
+        }
+    
+        .hamburger {
+            display: none;
+        }
+    
+        .menu{
+            display: block;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--color-dark-gray);
+            display: flex;
+        }
+    
+        .menuItems {    
+            font-size: 20px;
+            padding: 10px 50px;
+            text-align: center;
+    
+        }
+        .menuItems > a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.4vw;
+        }
+
+        /*FIRST SECTION*/
+
+    .section1 {
+        position: relative;
+    }
+    .section1Img {
         width: 100%;
-        text-align: center;  
+    }
+
+    .wholeIntro {
+        color: white;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        border: white solid 6px;
+        margin: 16% 16%;
+    }
+
+    .introH1 {
+        font-weight: bold;
+        font-size: 4vw;
+        text-align: start;
+        padding: 0 15px;
+    }
+
+    .intro {   
+        background-color: rgba(0,0,0,0.3);
+        width: 100vw;
+        height: 100%;
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .introH2 {
+        font-weight: bold;
+        font-size: 3vw;
+        padding: 30px 0;
+    }
+
+    .introP {
+        display: flex;
+        font-size: 1vw;
+        border-top: white dotted 1px;
+    }
+    .introP > p {
+        /* border: red solid 1px; */
+        line-height: 130%;
+        padding-top: 10%;
     }
 
 }
