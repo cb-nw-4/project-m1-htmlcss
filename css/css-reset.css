@@ -130,3 +130,12 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+ 
+h2 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}

@@ -5,6 +5,9 @@
   --z-index-nav: 1;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /* nav section */
 
@@ -33,6 +36,10 @@
   display: block;
   text-align: center;
   display: none;
+}
+
+.nav-container:hover {
+  cursor: pointer;
 }
 
 .hamburger,
@@ -81,17 +88,6 @@ a {
   color: white;
   font-size: 1.2em;
   font-weight: bold;
-  
-} 
-
-h1 {
-  font-weight: bolder;
-  font-size: 1.2em;
-}
- 
-h2 {
-  font-size: 1.2em;
-  font-weight: bolder;
 }
 
 .text-container {
@@ -101,11 +97,213 @@ h2 {
   justify-content: space-evenly;
   top: 35%;
   padding: 1em;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   line-height: 1.4em;
   width: 100%;
   height: 200px;
-  
-  /* text-align: center; */
+}
+
+/* features section */
+
+.feature-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  border: 2px solid whitesmoke;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 8rem;
+  color: lightgrey;
+}
+
+h3 {
+  margin: 1rem 0;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn {
+  padding: 0.5rem 5rem;
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  border: 2px gold solid;
+  border-radius: 5px;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.nav > img {
+  height: 30px;
+}
+
+/* cool text block section */
+
+.cool-text {
+  position: relative;
+}
+
+.black-box {
+  background: var(--primary-color);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: left;
+}
+
+.black-box > h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.black-box > p {
+  width: 80%;
+}
+
+.little-box {
+  background: var(--primary-color);
+  color: white;
+  border: 4px solid white;
+  width: 40%;
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: 30%;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.little-box > h4 {
+  color: red;
+  margin-bottom: 0.8rem;
+}
+
+.little-box:hover {
+  animation: spin ease-in-out 1s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1.4) rotate(360deg);
+  }
+  100% {
+    background: dodgerblue;
+  }
+}
+
+.gradient-box {
+  background: linear-gradient(to right, white, dodgerblue);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: right;
+}
+
+.gradient-box > h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* image gallery */
+
+.image-1 {
+  width: 100%;
+}
+
+.image > img {
+  display: block;
+  width: 100%;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  position: relative;
+}
+
+.image-1 > p,
+.image-2 > p,
+.image-3 > p,
+.image-4 > p,
+.image-5 > p,
+.image-6 > p {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: var(--primary-color) 2px 1px;
+  display: none;
+}
+
+.image-1:hover > p,
+.image-2:hover > p,
+.image-3:hover > p,
+.image-4:hover > p,
+.image-5:hover > p,
+.image-6:hover > p {
+  display: block;
+}
+
+.image-1:hover,
+.image-2:hover,
+.image-3:hover,
+.image-4:hover,
+.image-5:hover,
+.image-6:hover {
+  transform: scale(1.1);
+}
+
+/* register input */
+
+.mailing {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mailing > p {
+  padding: 1rem;
+  color: gray;
+  font-weight: bolder;
+}
+
+.btn-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.input {
+  /* padding: 0.4em 1em; */
+  height: 30px;
+  border: 2px solid gray;
+}
+
+.submit {
+  height: 30px;
+}
+
+.checkbox {
+  align-self: ;
 }
