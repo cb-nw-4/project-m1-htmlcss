@@ -199,7 +199,7 @@ color: red; }
 .adv2 { 
     width: 33.3%;
     position: absolute; 
-    top: 45%; 
+    top: 43%; 
     left: 33.3%;
     transition: transform 2s, border 2s; 
 }
@@ -434,6 +434,7 @@ color: red; }
     .adv2 { 
         left: 5%;
         width: 15%;
+        top: 47%;
     }
 
     .adv, .adv2 { 
