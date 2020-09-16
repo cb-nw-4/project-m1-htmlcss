@@ -72,10 +72,10 @@ a {
 
 .adv-hover {
     background-color: var(--color-dark-gray);
-    box-sizing: border-box;
     text-align: center;
-    z-index: 1;
     position: absolute;
+    box-sizing: border-box;
+    z-index: 1;
     border: 5px solid white;
 }
 
@@ -89,9 +89,69 @@ a {
     font-size: 13px;
 }
 
-label {
-    color: gray;
+.grid1-1,
+.grid2-1,
+.grid3-1,
+.grid1-2,
+.grid2-2,
+.grid3-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+.photo-hover-text {
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    text-shadow: 2px 2px 4px var(--color-dark-gray);
+}
+
+.grid1-1 .gallery-photo,
+.grid2-1 .gallery-photo,
+.grid3-1 .gallery-photo,
+.grid1-2 .gallery-photo,
+.grid2-2 .gallery-photo,
+.grid3-2 .gallery-photo {
+    transition: transform .5s ease;
+}
+
+.grid1-1:hover .gallery-photo,
+.grid2-1:hover .gallery-photo,
+.grid3-1:hover .gallery-photo,
+.grid1-2:hover .gallery-photo,
+.grid2-2:hover .gallery-photo,
+.grid3-2:hover .gallery-photo {
+    transform: scale(1.3);
+}
+
+.grid1-1:hover .photo-hover-text {
+    display: block;
+}
+
+.grid2-1:hover .photo-hover-text {
+    display: block;
+}
+
+.grid3-1:hover .photo-hover-text {
+    display: block;
+}
+
+.grid1-2:hover .photo-hover-text {
+    display: block;
+}
+
+.grid2-2:hover .photo-hover-text {
+    display: block;
+}
+
+.grid3-2:hover .photo-hover-text {
+    display: block;
+}
+
 
 @media screen and (max-width: 768px) {
     nav {
@@ -150,6 +210,7 @@ label {
         background-position: center;
         color: white;
         display: flex;
+        flex-direction: column;
     }
 
     .header-h1 {
@@ -203,7 +264,7 @@ label {
 
     .adv-hover {
         width: 50%;
-        top: 50%;
+        top: 48%;
         left: 25%;
     }
 
@@ -242,12 +303,99 @@ label {
     .gallery-photo {
         display: block;
         width: 100vw;
-        height: 250px;
         object-fit: cover;
+        z-index: 0;
+    }
+
+    .grid1-1,
+    .grid2-1,
+    .grid3-1,
+    .grid1-2,
+    .grid2-2,
+    .grid3-2 {
+        height: 250px;
     }
     
-    form {
+    .mailing-list {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgb(223, 222, 222);
+    }
+
+    label {
+        margin-bottom: 15px;
+        color: var(--color-dark-gray);
+    }
+
+    .label-email {
+        font-size: 15px;
+    }
+
+    .label-checkbox {
+        font-size: 13px;
+    }
+
+    .input-field {
+        margin-bottom: 10px;
+    }
+
+    .email,
+    .send-btn {
+        float: left;
+    }
+
+    .email {
+        border: 2px solid var(--color-med-gray);
+        border-right: none;
+        border-top-left-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        height: 23px;
+        font-size: 10px;
+    }
+
+    .send-btn {
+        background-color: var(--color-med-gray);
+        border: none;
+        border-top-right-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+    }
+
+    .checkbox {
+        -webkit-appearance: none;
+    }
+
+    .checkbox-custom {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        background-color:transparent;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--color-med-gray);
+    }
+
+    .checkbox-row {
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-bottom: 50px;
+    }
+
+    .footer-links {
+        color: var(--color-dark-gray);
+        line-height: 150%;
+        margin-left: 30px;
+    }
+    
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -258,6 +406,8 @@ label {
     }
 
     nav {
+        display: flex;
+        justify-content: space-between;
         background-color: var(--color-dark-gray);
         height: 60px;
         width: 100%;
@@ -271,17 +421,69 @@ label {
 
     .nav-items {
         display: flex;
+    }
+
+    .nav-item1 a,
+    .nav-item2 a,
+    .nav-item3 a {
+        box-sizing: border-box;
+        height: 60px;
+        padding: 25px 8px;
+        margin: 0 15px 0 15px;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .nav-item1 a:after {
+        content: '';
+        display: block;
         position: absolute;
-        top: 25px;
-        right: 15px;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: white;
+        transition: width .3s;
     }
 
-    .nav-item1,
-    .nav-item2,
-    .nav-item3 {
-        padding: 0 20px;
+    .nav-item2 a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: white;
+        transition: width .3s;
     }
 
+    .nav-item3 a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: white;
+        transition: width .3s;
+    }
+    
+    .nav-item1 a:hover:after {
+        width: 100%;
+    }
+
+    .nav-item2 a:hover:after {
+        width: 100%;
+    }
+
+    .nav-item3 a:hover:after {
+        width: 100%;
+    }
+    
     .header-container {
         height:950px;
         width: 100%;
@@ -374,7 +576,7 @@ label {
 
     .adv-hover {
         max-width: 25%;
-        top: 43%;
+        top: 350px;
         left: 30px;
         z-index: 1;
     }
@@ -393,10 +595,33 @@ label {
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 50px;
     }
-
+    
     .gallery-photo {
+        height: 300px;
         width: 100%;
         object-fit: cover;
-        height: 200px;
+        z-index: 0;
+        position: relative;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgb(223, 222, 222);
+    }
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .footer-links {
+        color: var(--color-dark-gray);
+        line-height: 200%;
+        font-size: 13px;
     }
 }
