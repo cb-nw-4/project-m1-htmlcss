@@ -1,31 +1,50 @@
-/* Mobile styles */
+/* Desktop styles */
 
 @media (min-width: 769px) {
-    .mobile-nav {
+    /* Nav Bar Style */
+    #img1 {
         display: none;
-        position: absolute;
     }
-    .desktop-nav ul {
-        position: relative;
-        align-self: center;
+    .navBar {
+        justify-content: space-between;
     }
-    .desktop-nav>ul li:hover {
-        background-color: thistle;
+    .navigation {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .navigation a {
+        margin: 0 10px;
+        padding: 20px 0;
+    }
+    .navigation a:hover {
+        border-bottom: 2px solid white;
+    }
+    /* Head Style */
+    h1 {
+        font-size: 50px;
+        line-height: 5rem;
+    }
+    h3 {
+        font-size: 30px;
+        padding: 20px 10px;
+        line-height: 3rem;
     }
     .head {
+        height: 600px;
         justify-content: center;
     }
     .head>div {
         display: flex;
         box-sizing: inherit;
         border: 6px solid white;
-        height: 50%;
-        width: 80%;
+        width: 800px;
         align-self: center;
     }
     .head>div>div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .head h3 {
         margin-bottom: 20px;
@@ -35,27 +54,31 @@
         display: flex;
         justify-content: space-around;
         padding: 10px;
+        height: 200px;
     }
+    /*Features part style */
     .feature {
-        width: 25%;
+        width: 300px;
     }
+    /* cool part Style */
     .coolLook {
         margin-left: 35px;
     }
+    /* image part style */
     .imgSection {
         align-items: center;
     }
     .imgSection-row {
         display: flex;
         justify-content: center;
-        width: 80%;
     }
     .containImg {
-        width: 30%;
+        width: 100%;
     }
     .containImg img {
         width: 100%;
     }
+    /* Footer nav style */
     footer {
         justify-content: space-around;
     }

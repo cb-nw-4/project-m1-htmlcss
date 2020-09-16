@@ -1,37 +1,69 @@
 /* Mobile styles */
 
 @media (max-width: 768px) {
-    .mobile-nav>img {
-        position: relative;
-        display: block;
-        margin: 10px;
-    }
-    .mobile-nav>img:hover {
-        cursor: pointer;
-        display: block;
-    }
-    .desktop-nav>ul li:hover {
-        background-color: thistle;
-    }
-    .head div {
+    /*Nav Bar Style*/
+    .navBar {
+        height: 60px;
         display: flex;
-        flex-flow: nowrap column;
-        justify-content: center;
-        padding: 5px;
+        justify-content: space-between;
+        position: relative;
     }
+    .navigation {
+        position: absolute;
+        margin-top: 10px;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        display: none;
+    }
+    .navigation a {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    #img1 {
+        cursor: pointer;
+        width: 10%;
+        padding: 10px;
+    }
+    #img1:hover~.navigation,
+    .navigation:hover {
+        display: block;
+    }
+    .navigation a:hover {
+        background-color: #212121;
+    }
+    .head {
+        height: 500px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+        padding: 20px 0 5px 0;
+    }
+    .head p:last-child {
+        padding-bottom: 10px;
+    }
+    /*Features part style */
     .features {
         flex-direction: column;
         align-items: center;
     }
     .feature {
-        width: 40%;
+        width: 250px;
+        height: 300px;
     }
+    /* cool part Style */
     .coolLook {
         align-self: center;
     }
     .containImg img {
         width: 100%;
     }
+    /* Footer nav style */
     footer {
         flex-flow: column;
     }

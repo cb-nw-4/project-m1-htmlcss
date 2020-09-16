@@ -14,23 +14,41 @@ body {
     flex-direction: column;
 }
 
-.head-nav {
-    display: flex;
-    background-color: #000000;
-    justify-content: space-between;
+
+/*Nav Bar Style*/
+
+.nav {
+    background-color: black;
 }
+
+.navBar {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    align-self: center;
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+}
+
+
+/* Head Style */
 
 .head {
     display: flex;
     background-color: wheat;
-    height: 80vh;
     background-image: url("../imgs/bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 h1 {
-    font-size: 50px;
     color: white;
     font-weight: bold;
     margin: 20px;
@@ -38,9 +56,7 @@ h1 {
 }
 
 h3 {
-    font-size: 26px;
     color: white;
-    padding: 20px 0;
     font-weight: bold;
     margin-left: 20px;
 }
@@ -65,6 +81,9 @@ main {
     min-height: 100vh;
 }
 
+
+/*Features part style */
+
 .features {
     display: flex;
     justify-content: space-around;
@@ -76,17 +95,18 @@ main {
 .feature {
     display: flex;
     flex-direction: column;
-    border: 1px solid lightgray;
+    border: 2px solid white;
     align-items: center;
     margin: 20px;
     padding: 15px 10px;
-    box-shadow: 2px 2px lightsteelblue;
-    border-radius: 4px;
+    box-shadow: 2px 2px 5px lightgray;
+    border-radius: 10px;
 }
 
 .feature p {
-    font-size: 14px;
+    font-size: 12px;
     color: gray;
+    line-height: normal;
     padding: 5px 10px;
     text-align: center;
     margin-bottom: 10px;
@@ -101,6 +121,14 @@ main {
     border-radius: unset;
     border: none;
 }
+
+.feature button:hover {
+    cursor: pointer;
+    border: 2px solid orange;
+}
+
+
+/* cool part Style */
 
 .block {
     display: flex;
@@ -118,6 +146,7 @@ main {
     color: white;
     padding: 20px;
     margin-bottom: 50px;
+    line-height: 2rem;
 }
 
 .coolLook {
@@ -126,10 +155,14 @@ main {
     text-align: center;
     border: 5px solid white;
     background-color: black;
-    z-index: 2;
     position: relative;
     margin-top: -50px;
     margin-bottom: -60px;
+}
+
+.coolLook:hover {
+    cursor: pointer;
+    animation: 2s ease-in-out cool;
 }
 
 .coolLook h6 {
@@ -140,6 +173,15 @@ main {
 .coolLook p {
     font-size: 11px;
     color: white;
+}
+
+@keyframes cool {
+    0% {
+        scale: 1;
+    }
+    to {
+        transform: translate(100px) rotate(360deg);
+    }
 }
 
 .gradient {
@@ -154,6 +196,9 @@ main {
     padding: 20px;
 }
 
+
+/* image part style */
+
 .imgSection {
     display: flex;
     flex-direction: column;
@@ -163,12 +208,14 @@ main {
     position: relative;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .textImg {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    align-self: center;
     transform: (-50%, -50%);
     display: none;
     color: white;
@@ -176,10 +223,36 @@ main {
     margin-left: 0;
 }
 
+.containImg img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
 .containImg:hover .textImg {
     display: block;
     cursor: pointer;
 }
+
+.containImg img:hover {
+    animation: 1s ease-in-out imagEffect;
+}
+
+.containImg img:hover~.textImg {
+    animation: 1s ease-in-out imagEffect;
+}
+
+@keyframes imagEffect {
+    0% {
+        scale: 1;
+    }
+    to {
+        scale: 1.5;
+    }
+}
+
+
+/*Suscribe part style */
 
 .form {
     display: flex;
@@ -202,8 +275,16 @@ main {
 }
 
 .btn {
-    background-color: #C0C0C0;
+    align-self: center;
+    background-color: #a9a9a9;
     border: none;
+    margin-left: -3px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: gray;
 }
 
 .box input {
@@ -213,6 +294,9 @@ main {
 .box label {
     align-self: center;
 }
+
+
+/* Footer nav style */
 
 footer {
     display: flex;
@@ -225,37 +309,4 @@ footer {
 
 footer div>ul>li {
     margin: 10px;
-}
-
-.logo-img {
-    align-self: center;
-    width: 50px;
-    height: 40px;
-    margin: 10px;
-}
-
-.mobile-nav {
-    align-self: center;
-}
-
-.mobile-nav>img {
-    margin: 20px;
-    align-self: center;
-}
-
-.desktop-nav {
-    position: relative;
-    display: flex;
-}
-
-.desktop-nav ul {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.desktop-nav ul li {
-    margin: 10px;
-    box-sizing: content-box;
 }
