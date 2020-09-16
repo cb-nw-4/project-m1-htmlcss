@@ -274,36 +274,57 @@ p {
 
 /* register input */
 
-.mailing {
-  padding: 3rem;
+.form {
+  /* text-align: center; */
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  font-size: 12px;
+  border-bottom: 2px solid whitesmoke;
 }
 
-.mailing > p {
-  padding: 1rem;
-  color: gray;
-  font-weight: bolder;
-}
-
-.btn-container {
+.mailing-list {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  padding-bottom: 0.5rem;
 }
 
-.input {
-  /* padding: 0.4em 1em; */
+.input-container {
+  padding-left: 1.8rem;
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+
+.email {
   height: 30px;
-  border: 2px solid gray;
+  border: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-.submit {
+.button-2 {
   height: 30px;
+  background: darkgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid grey;
+  border-left: none;
 }
 
-.checkbox {
-  align-self: ;
+.button-2 > img {
+  height: 60%;
+  width:100%;
+}
+
+.checkbox-container {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.divd {
+  margin: 4rem;
 }
