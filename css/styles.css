@@ -240,7 +240,7 @@ html {
         font-size: 0.8em;
     }
 
-    /* IMAGE SECTION */
+    /* IMAGE SECTION SECTION 4*/
 
     .section4Div {
         position: relative;
@@ -260,8 +260,73 @@ html {
         bottom: 0;
         right: 0;
         align-items: center;
-        justify-content: center;
+        justify-content: center;      
     }
+
+    /* SECTION 5 REGISTER */
+
+    .section5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section5P {
+        padding: 8% 0 3% 0;
+        font-size: 2.9vw;
+    }
+
+    .section5TextArea {
+        position: relative;
+    }
+
+    .section5TextArea, .textArea {
+        width: 40vw;
+        height: 3.5vh;
+        box-sizing: border-box;
+    }
+
+    .textArea {
+        border: var(--color-med-gray) 2px solid;
+        border-radius: var(--border-radius);
+    }
+
+    .section5Btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 9vw;
+        height: 100%;
+        background-color: var(--color-med-gray);
+        border: none;
+        border-radius: var(--border-radius);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageBtn5 {
+        width: 4vw;
+    }
+
+    .section5Label {
+        font-size: 2.2vw;
+        padding: 1vh 8vw 5vh 0;
+    }
+
+    /* SECTION 6 ABOUT US */
+
+    .section6 {
+        border-top: var(--color-med-gray) 1px solid;
+        padding: 3vh 0;
+    }
+
+    .aboutUs {
+        margin: 2vh 0;
+        line-height: 2.5vh;
+        font-size: 3vw;
+    }
+
 }
 
 
@@ -383,7 +448,7 @@ html {
         width: calc(100% / 3);
         align-self: center;
         text-align: center;
-        margin: 0 10px;
+        margin: 0 20px;
     }
 
     .featureImg {
