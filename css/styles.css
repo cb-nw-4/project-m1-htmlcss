@@ -313,7 +313,7 @@ a {
     .grid1-2,
     .grid2-2,
     .grid3-2 {
-        height: 250px;
+        height: 200px;
     }
     
     .mailing-list {
@@ -363,21 +363,63 @@ a {
         border-bottom-right-radius: var(--border-radius);
     }
 
-    .checkbox {
-        -webkit-appearance: none;
-    }
-
-    .checkbox-custom {
-        position: absolute;
-        height: 15px;
-        width: 15px;
-        background-color:transparent;
-        border-radius: var(--border-radius);
-        border: 1px solid var(--color-med-gray);
-    }
-
-    .checkbox-row {
+    .checkbox-container {
+        position: relative;
         margin-bottom: 50px;
+    }
+
+    .checkbox-container input {
+        opacity: 0;
+    }
+
+    .checkbox-container label:before{
+        content: "";
+        display: inline-block;       
+        height: 14px;
+        width: 14px;  
+        border: 2px solid var(--color-med-gray); 
+        border-radius: var(--border-radius);  
+    }
+
+    .checkbox-container label:after {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        width: 8px;
+        border-left: 2px solid var(--color-med-gray);
+        border-bottom: 2px solid var(--color-med-gray);
+        transform: rotate(-45deg);
+    }
+    
+    .checkbox-container label {
+        position: relative;
+    }
+
+    .checkbox-container label:before,
+    .checkbox-container label:after {
+        position: absolute;
+    }
+  
+    .checkbox-container label:before {
+        top: 0px;
+        left: -23px;
+    }
+    
+    .checkbox-container label:after {
+        left: -19px;
+        top: 5px;
+    }
+
+    .checkbox-container input + label:after {
+        content: none;
+    }
+
+    .checkbox-container input:checked + label:after {
+        content: "";
+    }
+
+    .checkbox-container input:focus + label:before {
+        outline: rgb(224, 144, 70) auto 5px;
     }
 
     footer {
@@ -622,6 +664,6 @@ a {
     .footer-links {
         color: var(--color-dark-gray);
         line-height: 200%;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
