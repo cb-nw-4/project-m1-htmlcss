@@ -597,4 +597,127 @@ html {
         position: relative;
     }
 
+     /* SECTION 5 REGISTER */
+
+    .flexSection5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section5 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section5P {
+        /* padding: 8% 0 3% 0; */
+        font-size: 1.8vw;
+    }
+
+    .section5TextArea {
+        position: relative;
+    }
+
+    .section5TextArea, .textArea {
+        width: 26vw;
+        height: 3.5vh;
+        box-sizing: border-box;
+    }
+
+    .textArea {
+        border: var(--color-med-gray) 2px solid;
+        border-radius: var(--border-radius);
+    }
+
+    .section5Btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5vw;
+        height: 100%;
+        background-color: var(--color-med-gray);
+        border: none;
+        border-radius: var(--border-radius);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageBtn5 {
+        width: 4vw;
+    }
+
+    .section5Label {
+        font-size: 2.2vw;
+        padding: 1vh 8vw 5vh 0;
+    }
+
+    /* SECTION 5 REGISTER */
+
+    .section5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section5P {
+        padding: 5% 8vw 2% 0;
+        font-size: 1.6vw;
+    }
+
+    .section5TextArea {
+        position: relative;
+    }
+
+    .section5TextArea, .textArea {
+        width: 30vw;
+        height: 3.8vh;
+        box-sizing: border-box;
+    }
+
+    .textArea {
+        border: var(--color-med-gray) 2px solid;
+        border-radius: var(--border-radius);
+    }
+
+    .section5Btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5vw;
+        height: 100%;
+        background-color: var(--color-med-gray);
+        border: none;
+        border-radius: var(--border-radius);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageBtn5 {
+        width: 30%;
+    }
+
+    .section5Label {
+        font-size: 1.3vw;
+        padding: 1vh 11vw 5vh 0;
+    }
+
+    /* SECTION 6 ABOUT US */
+
+    .section6 {
+        border-top: var(--color-med-gray) 1px solid;
+        padding: 3vh 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .aboutUs {
+        margin: 2vh 0;
+        line-height: 5vh;
+        font-size: 2vw;
+    }
+
 }
