@@ -399,7 +399,7 @@ a {
     .checkbox-container label:after {
         position: absolute;
     }
-  
+
     .checkbox-container label:before {
         top: 0px;
         left: -23px;
@@ -644,6 +644,112 @@ a {
         object-fit: cover;
         z-index: 0;
         position: relative;
+    }
+
+    .mailing-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    label {
+        margin-bottom: 15px;
+        color: var(--color-dark-gray);
+    }
+
+    .label-email {
+        font-size: 15px;
+        position: relative;
+        left: -15px;
+    }
+
+    .label-checkbox {
+        font-size: 15px;
+    }
+
+    .input-field {
+        margin-bottom: 10px;
+    }
+
+    .email,
+    .send-btn {
+        float: left;
+    }
+
+    .email {
+        border: 2px solid var(--color-med-gray);
+        border-right: none;
+        border-top-left-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        height: 23px;
+        font-size: 12px;
+    }
+
+    .send-btn {
+        background-color: var(--color-med-gray);
+        border: none;
+        border-top-right-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+    }
+
+    .checkbox-container {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .checkbox-container input {
+        opacity: 0;
+    }
+
+    .checkbox-container label:before{
+        content: "";
+        display: inline-block;       
+        height: 14px;
+        width: 14px;  
+        border: 2px solid var(--color-med-gray); 
+        border-radius: var(--border-radius);  
+    }
+
+    .checkbox-container label:after {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        width: 8px;
+        border-left: 2px solid var(--color-med-gray);
+        border-bottom: 2px solid var(--color-med-gray);
+        transform: rotate(-45deg);
+    }
+    
+    .checkbox-container label {
+        position: relative;
+    }
+
+    .checkbox-container label:before,
+    .checkbox-container label:after {
+        position: absolute;
+    }
+
+    .checkbox-container label:before {
+        top: 0px;
+        left: -27px;
+    }
+    
+    .checkbox-container label:after {
+        left: -23px;
+        top: 5px;
+    }
+
+    .checkbox-container input + label:after {
+        content: none;
+    }
+
+    .checkbox-container input:checked + label:after {
+        content: "";
+    }
+
+    .checkbox-container input:focus + label:before {
+        outline: rgb(224, 144, 70) auto 5px;
     }
 
     footer {
