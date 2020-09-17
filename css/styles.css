@@ -65,7 +65,7 @@ a {
 
 /* Mobile styles */
 
-.header-bar {
+.mobile-header-bar {
     height: 45px;
     background-color: var(--color-dark-gray);
     width: 100vw;
@@ -75,7 +75,7 @@ a {
 }
 
 .logo,
-.menu-btn {
+.dropdown-btn {
     height: 35px;
     margin: 0px 15px;
 }
@@ -84,35 +84,47 @@ a {
     display: none;
 }
 
-.dropdown-menu {
+.dropdown-btn {
     background-color: var(--color-dark-gray);
-    width: 100vw;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-}
-
-.dropdown-item {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    width: 100vw;
-}
-
-.dropdown-item > a {
     color: white;
-}
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: calc(100vw - 140px);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: flex;
+    width: 100vw;
+  }
+  
 
-.dropdown-item:hover {
-    background-color: var(--color-med-gray);
-}
-
-.menu-btn:hover .dropdown-menu {
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--color-dark-gray);
+    min-width: 100vw;
+    z-index: 1;
+    right: 0px;
+    top: 35px;
+  }
+  
+.dropdown-content a {
+    color: white;
+    text-align: center;
+    width: 100vw;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-}
+  }
+  
+.dropdown-content a:hover {background-color: var(--color-med-gray);}
+  
+.dropdown:hover .dropdown-content {display: flex;}
 
 .falcon-hero {
     background-image: url(/imgs/bg.jpg); 
@@ -391,16 +403,30 @@ a {
         font-weight: 500;
     }
 
-    .menu-btn {
+    .mobile-header-bar {
+        display: none;
+    }
+
+    .desktop-header-bar {
+        height: 45px;
+        background-color: var(--color-dark-gray);
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown {
         display: none;
     }
 
     .navigation {
-
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 10px 15px;
+        justify-content: flex-end;
+        flex: 3;
+        padding: 10px 5px;
     }
 
     .nav-item {
@@ -436,10 +462,6 @@ a {
 
     .nav-item:hover {
         border-bottom: solid 3px white;  
-    }
-
-    .dropdown-menu {
-        display: none;
     }
     
     .falcon-hero {
