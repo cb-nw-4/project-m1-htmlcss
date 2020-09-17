@@ -60,8 +60,9 @@
     .coolLook {
         align-self: center;
     }
-    .containImg img {
-        width: 100%;
+    /*image part Style*/
+    .imgSection {
+        flex-direction: column;
     }
     /* Footer nav style */
     footer {

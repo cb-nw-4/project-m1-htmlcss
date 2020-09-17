@@ -1,6 +1,6 @@
-/* Desktop styles */
+/* Tablet styles */
 
-@media (min-width: 900px) {
+@media (min-width: 768px) and (max-width: 899px) {
     /* Nav Bar Style */
     #img1 {
         display: none;
@@ -22,23 +22,23 @@
     }
     /* Head Style */
     h1 {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 5rem;
     }
     h3 {
-        font-size: 30px;
+        font-size: 25px;
         padding: 20px 10px;
         line-height: 3rem;
     }
     .head {
-        height: 600px;
+        height: 500px;
         justify-content: center;
     }
     .head>div {
         display: flex;
         box-sizing: inherit;
         border: 6px solid white;
-        width: 800px;
+        width: 700px;
         align-self: center;
     }
     .head>div>div {
@@ -56,9 +56,20 @@
         padding: 10px;
         height: 200px;
     }
+    .head p {
+        font-size: 14px;
+    }
     /*Features part style */
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .feature {
         width: 300px;
+        height: 250px;
+    }
+    .feature:last-child {
+        align-self: flex-end;
     }
     /* cool part Style */
     .coolLook {
@@ -70,7 +81,7 @@
         align-items: stretch;
     }
     .containImg {
-        width: 33.33%;
+        width: 50%;
     }
     /* Footer nav style */
     footer {
