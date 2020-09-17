@@ -441,7 +441,23 @@ a {
         color: white;
         padding: 13px 0px;
         margin: 0px;
+        position: relative;
     }
+
+      .nav-item > a:after {
+        content: '';
+        height: 4px;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 0%;
+        background: white;
+        transition: 0.5s;
+      }
+
+      a:hover:after {
+        width: 100%;
+      }
 
     /* .nav-item:before {
         content: "";
@@ -460,9 +476,9 @@ a {
         width: 100%; 
     } */
 
-    .nav-item:hover {
+    /* .nav-item:hover {
         border-bottom: solid 3px white;  
-    }
+    } */
     
     .falcon-hero {
         height: 600px;
