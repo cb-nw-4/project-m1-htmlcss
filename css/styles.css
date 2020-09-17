@@ -181,6 +181,7 @@ a {
     text-align: center;
     padding: 10px;
     margin-bottom: 15px;
+    height: 100px;
 }
 
 .feature-btn {
@@ -240,6 +241,20 @@ a {
 .ani-box-contents > h5 {
     font-size: medium;
     color: red;
+}
+
+.ani-box:hover .ani-box-contents > h5 {
+    animation-name: cool-colors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cool-colors {
+    0% {color: red}
+    25% {color: orange}
+    50% {color: yellow}
+    75% {color: greenyellow}
+    100% {color: red}
 }
 
 .ani-box-contents > p {
@@ -400,8 +415,24 @@ a {
         color: white;
         padding: 13px 0px;
         margin: 0px;
-        
     }
+
+    /* .nav-item:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #FFF;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item:hover:before {
+        visibility: visible;
+        width: 100%; 
+    } */
 
     .nav-item:hover {
         border-bottom: solid 3px white;  
