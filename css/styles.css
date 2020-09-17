@@ -26,7 +26,6 @@ html {
         height: auto;
         display: flex;
         flex-direction: column;
-        border: red 2px solid;
     }
 
      /* HOVER NOT STAYING */
@@ -50,10 +49,10 @@ html {
     }
 
     .menu{
-        /* display: none; */
+        display: none;
 
-        display: block;
-        z-index: 2;
+        /* display: block;
+        z-index: 2; */
 
         position: absolute;
         top: 100%;
@@ -78,7 +77,12 @@ html {
         text-decoration: none;
     }
 
-    .hamburger:hover ~ .menu, .menu:hover{
+    .menu-container{
+        align-self: stretch;
+        display: inline-flex;
+    }
+
+    .menu-container:hover .menu, .menu:hover{
         display: block;
         z-index: 2;
     }
@@ -208,7 +212,7 @@ html {
     }
 
     .gradient {
-        background-color: skyblue;
+        background-image: linear-gradient(to right, #fff, rgb(0, 140, 255));
         height: 300px;
         text-align: right;
         padding-right: 15px;
@@ -247,7 +251,7 @@ html {
     }
 
     .centerCoolH2 {
-        color: darkred;
+        color:red;
         font-weight: bold;
         font-size: 1.1em;
         padding-bottom: 15px;
@@ -412,8 +416,6 @@ html {
             padding: 10px 50px;
             margin: 0 4px;
             text-align: center;
-            border: red solid 2px;
-            /* HOW TO MAKE THE HOVER ANIMATION */
         }
 
         .menuItems > a{
@@ -566,7 +568,7 @@ html {
     }
 
     .gradient {
-        background-color: skyblue;
+        background-image: linear-gradient(to right, #fff, rgb(0, 140, 255));
         height: 500px;
         text-align: right;
         padding-right: 15px;
@@ -606,7 +608,7 @@ html {
     }
 
     .centerCoolH2 {
-        color: darkred;
+        color: red;
         font-weight: bold;
         font-size: 1.1em;
         padding-bottom: 15px;
