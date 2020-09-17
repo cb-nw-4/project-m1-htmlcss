@@ -26,7 +26,10 @@ html {
         height: auto;
         display: flex;
         flex-direction: column;
+        border: red 2px solid;
     }
+
+     /* HOVER NOT STAYING */
 
     .mobileNav {
         display: flex;
@@ -47,7 +50,11 @@ html {
     }
 
     .menu{
-        display: none;
+        /* display: none; */
+
+        display: block;
+        z-index: 2;
+
         position: absolute;
         top: 100%;
         left: 0;
@@ -59,8 +66,13 @@ html {
         font-size: 20px;
         padding: 10px;
         text-align: center;
-
+        
     }
+
+    .menuItems:hover {
+        background-color: rgb(75, 74, 74);
+    }
+
     .menuItems > a{
         color: white;
         text-decoration: none;
@@ -70,6 +82,7 @@ html {
         display: block;
         z-index: 2;
     }
+
 
     /*FIRST SECTION*/
 
@@ -155,6 +168,10 @@ html {
         color: white;
         border: none;
         cursor: pointer;
+    }
+
+    .featureBtn:hover {
+        border: rgb(241, 222, 44) solid 2px;
     }
 
     .featureBtn:focus {
@@ -245,10 +262,17 @@ html {
     .section4Div {
         position: relative;
         margin: -3px 0;
+        overflow: hidden;
     }
 
     .section4Img {
         width: 100%;
+        transition: transform .2s;
+        transform: scale(1.2);
+    }
+
+    .section4Div:hover > .section4Img {
+        transform: scale(1.4);
     }
     .section4P {
         color: white;
@@ -260,8 +284,24 @@ html {
         bottom: 0;
         right: 0;
         align-items: center;
-        justify-content: center;      
+        justify-content: center;
+        display: none;
     }
+
+    .section4Div:hover > .section4P {
+        display: block;
+        color: white;
+        text-shadow: 1px 1.1px var(--color-med-gray);
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center; 
+    }
+
 
     /* SECTION 5 REGISTER */
 
@@ -370,13 +410,20 @@ html {
         .menuItems {    
             font-size: 20px;
             padding: 10px 50px;
+            margin: 0 4px;
             text-align: center;
-    
+            border: red solid 2px;
+            /* HOW TO MAKE THE HOVER ANIMATION */
         }
+
         .menuItems > a{
             color: white;
             text-decoration: none;
             font-size: 1.4vw;
+        }
+
+        .menuItems:hover > a{
+            border-bottom: white solid 2px;
         }
 
         /*FIRST SECTION*/
@@ -481,6 +528,10 @@ html {
         cursor: pointer;
     }
 
+    .featureBtn:hover {
+        border: rgb(241, 222, 44) solid 2px;
+    }
+
     .featureBtn:focus {
         outline: none;
     }
@@ -573,9 +624,21 @@ html {
 
     }
 
+    .section4Div {
+        box-sizing: border-box;
+        width: calc(100%/3);
+        position: relative;
+        overflow: hidden;
+    }
+
     .section4Img {
         width: 100%;
         height: 100%;
+        transition: transform .2s;
+    }
+
+    .section4Div:hover > .section4Img {
+        transform: scale(1.2);
     }
 
     .section4P {
@@ -589,13 +652,24 @@ html {
         right: 0;
         align-items: center;
         justify-content: center;
+        display: none;
     }
 
-    .section4Div {
-        box-sizing: border-box;
-        width: calc(100%/3);
-        position: relative;
+    .section4Div:hover > .section4P {
+        display: block;
+        color: white;
+        text-shadow: 1px 1.1px var(--color-med-gray);
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center; 
     }
+
+    
 
      /* SECTION 5 REGISTER */
 
