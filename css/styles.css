@@ -4,8 +4,8 @@
 :root {
   --color-dark-gray: #3a3633;
   --color-med-gray: #a6a6a6;
-  --border-radius: 5px;
-  --content-width: 1200px;
+  --color-light-gray: #dfdfdf;
+  --border-radius: 5px; 
   --nav-height: 55px;
 }
 
@@ -53,6 +53,14 @@ p {
 label {
   font-size: 14px;
 }
+
+.mid-section {
+  color: white;
+  box-sizing: border-box;
+  padding: 50px 0px;
+  height: 300px;
+}
+
 /* navigation bar style */
 header {
   background-color: var(--color-dark-gray);
@@ -146,7 +154,7 @@ header {
   height: 285px;
   border: solid 1px #f1f0ef;
   border-radius: var(--border-radius);
-  box-shadow: 0px 2px 4px 0px #dfdfdf;
+  box-shadow: 0px 2px 4px 0px var(--color-light-gray);
   text-align: center;
   margin: 15px;
   padding: 20px 15px 15px 15px;
@@ -167,17 +175,13 @@ header {
   color: white;
   background-color: var(--color-dark-gray);
   padding: 10px;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   font-size: 16px;
 }
 /*cool text section  */
 
 .section-cool {
-  background-color: var(--color-dark-gray);
-  color: white;
-  box-sizing: border-box;
-  padding: 50px 0px;
-  height: 300px;
+  background-color: var(--color-dark-gray); 
   position: relative;
 }
 
@@ -202,11 +206,8 @@ header {
 /*gradient section  */
 .section-gradient {
   background-image: linear-gradient(to right, #fff, DodgerBlue);
-  color: white;
-  box-sizing: border-box;
-  padding: 50px 0px;
-  height: 260px;
 }
+
 .gradient-text {
   text-align: right;
 }
@@ -298,7 +299,7 @@ form {
 /* Footer */
 footer {
   padding: 50px;
-  border-top: solid 1px #dfdfdf;
+  border-top: solid 1px var(--color-light-gray);
 }
 .links li {
   padding-bottom: 10px;
@@ -308,12 +309,17 @@ footer {
   color: var(--color-dark-gray);
 }
 
+/* events */
 .dropdown:hover .nav-dropdown {
   display: flex;
 }
 
 .nav-dropdown > a:hover {
   background-color: #494440;
+}
+
+.feature-button:active{
+    outline-color: yellow;
 }
 
 .cool-box:hover h4 {
@@ -388,6 +394,12 @@ footer {
   label {
     font-size: 16px;
   }
+
+  .mid-section {    
+    padding: 70px 0px;
+    height: 550px;
+  }
+
   /* navigation bar desktop*/
   .nav-dropdown {
     display: flex;
@@ -397,8 +409,8 @@ footer {
 
   .nav-dropdown > a {
     border-top: 5px solid var(--color-dark-gray);
-    border-bottom: 5px solid transparent;
-    transition: border-bottom-color 0.2s ease-in-out;
+    border-bottom: 5px solid var(--color-dark-gray);
+    transition: border-bottom-color 0.3s ease-in-out;
   }
 
   .nav-dropdown > a:hover {
@@ -415,7 +427,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 750px;
   }
 
   .section1 h1 {
@@ -426,9 +438,8 @@ footer {
 
   .section1-container {
     display: flex;
-    max-width: 80%;
-    max-height: 560px;
-    /* margin: auto; */
+    max-width: 80%;    
+    max-height: 700px;    
     border: solid 7px white;
   }
 
@@ -462,10 +473,7 @@ footer {
     border-radius: 0px;
   }
 
-  /*cool text section  */
-  .section-cool {
-    height: 500px;
-  }
+  /*cool text section  */  
   .cool-text {
     margin-left: 10px;
     width: 80%;
@@ -474,26 +482,17 @@ footer {
   .cool-box {
     padding: 20px;
     width: 225px;
-    top: 500px;
+    top: 550px;
     left: 30px;
     transform: translate(0%, -50%);
   }
 
-  /* gradient section */
-  .section-gradient {
-    padding: 50px 0px;
-    height: 500px;
-  }
-
+  /* gradient section */ 
   .gradient-text {
     margin-right: 10px;
   }
 
   /* gallery section */
-
-  label {
-    font-size: 16px;
-  }
   .gallery-container {
     margin: 0px auto 50px auto;
   }
