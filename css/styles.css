@@ -1,3 +1,22 @@
-@import 'css-reset.css';
+@import '0-css-reset.css';
+@import '1-header.css';
+@import '2-introduction.css';
+@import '3-features.css';
+@import '4-gradient.css';
+@import '5-photos.css';
+@import '6-registration.css';
+@import '7-footer.css';
+@import '8-widescreen.css';
 
-/* CSS here :) */
+:root {
+    --color-dark-gray:#3a3633;
+    --color-med-gray:#a6a6a6;
+    --border-radius: 4px;
+    --content-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+

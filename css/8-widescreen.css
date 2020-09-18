@@ -1,0 +1,149 @@
+     /* WideScreen Settings */
+     @media only screen and (min-width: 768px) {
+
+        .menuicon{
+            display: none;
+            padding: 20px;
+            padding-right: 40px;
+        }     
+    
+        .links{
+            display: flex;
+            }
+    
+        .dropdownlink{
+            
+            padding-left: 30px;
+            padding-right: 30px;
+        }    
+    
+        .introduction {
+            height: calc(100vw * 0.5);
+    
+        }     
+    
+        .introdiv1 {
+            border: 5px;
+            border-style: solid;
+            border-color: white;
+            display: flex;
+        }
+    
+        .introdiv1 > h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 72px;
+            padding: 20px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            width: 450px;
+        } 
+    
+        .introdiv2 > p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            padding-left: 40px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            width: 500px;
+            border-bottom: 1px dotted white;
+            }
+    
+        .introdiv3
+        {
+            
+            padding: 14px;
+            padding-right: 10px;
+            font-size: 36px;
+            display: flex;
+        
+            }
+    
+        .introdiv3par1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-right: 20px;
+            width: 220px;
+            }
+        
+        .introdiv3par2 {
+            display: block;
+            }
+    
+    
+    
+        .features > ul{ 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .somecooltext{
+            height: 315px;
+        }
+    
+        .somecooltext > h1{ 
+            font-size: 42px;
+        }
+    
+        .somecooltext > p{ 
+            font-size: 26px;
+            
+        }
+    
+        .somecooltextfloat{
+            
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-self: flex-start;
+            margin-left: 20px;
+        
+        }
+        .gradient{
+            height: 315px;
+        }
+        .gradient > h1{ 
+     
+            font-size: 42px;
+        }
+    
+        .gradient > p{ 
+            font-size: 26px;
+            
+        }
+ 
+        .photogallery > ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        } 
+     
+        .photo {
+            height: auto;
+            flex-grow: 1;
+            width: calc(100vw / 3 - 6px);
+        }
+        
+        .photocontainer > p{
+            font-size: 36px;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-left: 40px;
+            padding-bottom: 40px;
+            
+        }
+    
+        .footer > ul{
+            flex-grow: 1;
+            
+        }
+    
+        .footer > ul > li {
+            margin-left: 80px;
+        }
+    }

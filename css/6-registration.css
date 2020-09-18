@@ -1,0 +1,63 @@
+/* Registration Settings*/
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--color-dark-gray);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.registration > h2{
+    width: 300px;
+    padding: 10px;
+    
+}
+
+.registration > div{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.registration > div > div{
+    background-color:  var(--color-med-gray);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.email{
+    height: 31px;
+    width: 250px;
+    border: 2px solid;
+    border-color: var(--color-med-gray);
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+}
+
+.registration > div:nth-child(2){
+    padding: 10px;
+}
+
+.checkbox{
+    padding: 10px;
+}
+
+.checkbox > p{
+    padding-left: 10px;
+}
+
+.send {
+    transition: 2s;
+    cursor: pointer;
+}
+
+.send:hover {
+    transform: scale(1.25);
+}

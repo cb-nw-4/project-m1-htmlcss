@@ -1,0 +1,73 @@
+/* Introduction Section */
+
+.introduction {
+    background-image: url("../imgs/bg.jpg");
+    height: calc(100vw);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.introdiv1
+{
+    padding: 0px;
+    color: white;
+}
+
+.introdiv1 > h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}    
+
+.introdiv2{
+    
+    background-color: rgb(44, 44, 44, .5);
+}
+
+.introdiv2 > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 15px;
+
+}
+
+.introdiv3
+{
+    padding-top:5px;
+}
+
+.introdiv3par1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    line-height: 1.6
+
+}
+
+.introdiv3par2 {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 5px;
+    width: 220px;
+    line-height: 1.6
+}
