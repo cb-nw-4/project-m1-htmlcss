@@ -2,7 +2,7 @@
 
 @media (min-width: 768px) and (max-width: 899px) {
     /* Nav Bar Style */
-    #img1 {
+    .img1 {
         display: none;
     }
     .navBar {
@@ -87,7 +87,7 @@
     footer {
         justify-content: space-around;
     }
-    footer div>ul>li {
+    .info-list li {
         min-height: 2rem;
         align-self: center;
     }

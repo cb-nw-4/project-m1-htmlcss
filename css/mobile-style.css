@@ -22,12 +22,12 @@
         justify-content: center;
         padding: 20px;
     }
-    #img1 {
+    .img1 {
         cursor: pointer;
         width: 10%;
         padding: 10px;
     }
-    #img1:hover~.navigation,
+    .img1:hover~.navigation,
     .navigation:hover {
         display: block;
     }
@@ -35,7 +35,8 @@
         background-color: #212121;
     }
     .head {
-        height: 500px;
+        height: 400px;
+        align-items: center;
     }
     h1 {
         font-size: 30px;
@@ -68,10 +69,10 @@
     footer {
         flex-flow: column;
     }
-    footer div>ul>li {
+    .info-list>li {
         min-height: 1.5rem;
     }
-    footer div>ul>li:last-child {
+    .info-list>li:last-child {
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
