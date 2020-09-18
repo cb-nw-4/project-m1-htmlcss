@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
 }
 h1 {
@@ -32,12 +36,13 @@ p {
 .header * {
     padding: 0;
     margin: 0;
+    z-index: 10;
   }
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: lightblue;
+    background: slategray;
   }
   
   .header strong {
@@ -61,7 +66,11 @@ p {
   
   .header li:hover {
     background: #d2f2fc;
+    text-decoration: underline;
   }
+  
+
+  
   
   .header .dropdown__category .dropdown__menu {
     display: none;
@@ -76,20 +85,27 @@ p {
     display: block;
   }
 
+
+  @media (max-width: 768px) {
+
 /* Section: Hero */
 
-#hero {
+.hero-main {
     margin-top: 0px;
     padding: 25px 0px;
     width: 100%;
     height: auto;
-
-
-    background-image: url(/imgs/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
     color: white;
+}
+
+.hero-background {
+   
+    background-image: url(/imgs/bg.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .hero-right {
@@ -175,7 +191,7 @@ p {
 }
 
 .gallery-image img{
-    min-width: 400px;
+    min-width: 100%;
     height: auto;
     transition: all ease 0.2ms;
 }
@@ -184,32 +200,58 @@ p {
     transform: scale(1.2);
 }
 
-
-
-/* .gallery-main img {
-    margin: 0px 0px;
+.gallery-image p {
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    top: calc(50%);
     width: 100%;
-    height: auto;
-    transition: 0.2s;
-    overflow: hidden;
-} */
+    color: white;
+    text-shadow: 1px 2px gray;
+    z-index: 2;
+}
 
-/* .gallery-main img:hover{
-    transform: scale(1.5);
-} */
-
-
-
-
-/* Section Mailling List */
-
-.mailling-list-main {
-    width: 100%;
-    padding: 25px auto;
+.gallery-item:hover p{
     display: block;
-    margin: 100px auto;
+}
+
+
+/* Section Mailing List */
+
+.mailing-list-main {
+    width: 100vw;
+    padding: 50px auto;
+    display: block;
+    margin: 0px auto;
     text-align: center; 
-    background-color: rgb(91, 25, 14);
+}
+
+.mailing-list-main p {
+    color: lightslategrey;
+}
+
+.checkbox-main p {
+    font-size: x-small;
+}
+
+.text-button {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+.text-button button{
+    border-width: 0px;
+    border-radius: 0px 2px 2px 0px ;
+}
+
+input[type=text] {
+    background-color: white;
+    border: 2px solid #ebeceb;
+    border-radius: 2px 0px 0px 2px ;
+    height: auto;
 }
 
 
@@ -236,4 +278,213 @@ p {
 
 .footer-li a:link {
     color: rgb(45, 52, 60);
+}
+
+  }
+/* ---------------- Desktop Version Below --------------------- */
+/* ---------------------- Above 900px ---------------------- */
+
+/* Menu goes below */
+
+/* Hero section  */
+
+@media (min-width: 900px) {
+
+    .hero-background {
+        background-image: url(/imgs/bg.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        color: white;
+    }
+    
+
+        .hero-main {
+            box-sizing: border-box;
+            padding: 100px 100px;
+        }
+
+        .hero-wrapper {
+            box-sizing: border-box;
+            border:white 10px solid; 
+            display: flex;
+        }
+
+        .hero-right {
+            background-color: rgba(55, 45, 45, 0.5);
+            padding: 0px 15px;
+        }
+
+        .hero-right-h {
+            border-bottom: white 1px dotted;
+        }
+
+        /* Feature Section Below */
+
+        .features-main {
+            margin: 35px 70px;
+            display: flex;
+        }
+        
+
+
+        .feature {
+            width: auto;
+            height: auto;
+            margin: 0 10px;
+            text-align: center;
+            padding: 5px 8px;
+            margin-top: 20px;
+        
+            border: rgb(255, 255, 255);
+            border-width: 1px;
+            border-style: solid;
+                    /* Not mine borrowed it from CSS-TRICKS */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        
+        .feature-button {
+            width: 100%;
+            height: 40px;
+            /* padding: 50px auto; */
+            font-size: medium;
+            background-color: slategrey;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Cool Text Below */
+        .cool-text-main {
+            margin-top: 25px;
+        }
+        
+        .cool-text-top {
+            background-color: slategray;
+            color: white;
+            
+            padding: 45px 20px;
+        }
+        
+        .cool-text-bottom {
+            background-image: linear-gradient(90deg, rgb(255, 255, 255),rgb(133, 178, 179));
+            color: white;
+        
+            padding: 45px 20px;
+        
+            text-align: right;
+        }
+       /* Section Gallery */
+
+.gallery-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+    position: relative;
+}
+
+.gallery-image img{
+    /* position: absolute; */
+    transition: all ease 0.2ms;
+    object-fit: cover;
+}
+
+.gallery-image:hover img{
+    transform: scale(1.2);
+}
+
+.gallery-image p {
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    top: calc(50%);
+    width: 100%;
+    color: white;
+    text-shadow: 1px 2px gray;
+    z-index: 2;
+}
+
+.gallery-item:hover p{
+    display: block;
+}
+
+
+
+
+/* Section Mailing List */
+
+.mailing-list-main {
+    width: 100vw;
+    padding: 50px auto;
+    display: block;
+    margin: 0px auto;
+    text-align: center; 
+}
+
+.mailing-list-main p {
+    color: lightslategrey;
+}
+
+.checkbox-main p {
+    font-size: x-small;
+}
+
+.text-button {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+.text-button button{
+    border-width: 0px;
+    border-radius: 0px 2px 2px 0px ;
+}
+
+input[type=text] {
+    background-color: white;
+    border: 2px solid #ebeceb;
+    border-radius: 2px 0px 0px 2px ;
+    height: auto;
+}
+
+
+/* Section Footer */
+
+.footer-main {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col {
+    margin-top: none;
+    list-style-type: none;
+
+}
+
+.footer-li {
+    font-weight: 200;
+}
+
+.footer-li a {
+    text-decoration: none;
+}
+
+.footer-li a:link {
+    color: rgb(45, 52, 60);
+}
+
+.footer-li a:hover {
+    text-decoration: underline;
+}
+
+
 }
