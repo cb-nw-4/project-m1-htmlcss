@@ -376,6 +376,20 @@ a {
     height: 31px;
 }
 
+.checkbox-btn {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: solid 1px var(--color-med-gray);
+    border-radius: 2px;
+    background-color: white;
+    margin: 0px 5px;
+}
+
+.checkbox-btn:checked {
+    background-color: var(--color-med-gray);
+}
+
 /* footer section */
 
 #products {
