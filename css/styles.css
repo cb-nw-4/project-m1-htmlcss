@@ -41,13 +41,13 @@ h4 {
   font-size: 16px;
 }
 h5 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
-  margin: 10px;
+  margin: 15px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 label {
@@ -83,7 +83,6 @@ header {
 
 .menu-mobile {
   background-color: var(--color-dark-gray);
-  /* height: var(--nav-height);*/
   height: 45px;
 }
 
@@ -119,7 +118,6 @@ header {
   background: rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 20px 0px;
-  /* line-height: 1.4; */
 }
 
 .section1 h1 {
@@ -143,15 +141,15 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 225px;
+  width: 260px;
 
-  height: 225px;
+  height: 285px;
   border: solid 1px #f1f0ef;
   border-radius: var(--border-radius);
   box-shadow: 0px 2px 4px 0px #dfdfdf;
   text-align: center;
   margin: 15px;
-  padding: 15px;
+  padding: 20px 15px 15px 15px;
 }
 
 .feature-container p {
@@ -161,12 +159,16 @@ header {
   margin-bottom: 10px;
 }
 
+.feature-icon {
+  height: 32px;
+}
 .feature-button {
   margin-top: auto;
   color: white;
   background-color: var(--color-dark-gray);
   padding: 10px;
   border-radius: 4px;
+  font-size: 16px;
 }
 /*cool text section  */
 
@@ -180,9 +182,9 @@ header {
 }
 
 .cool-text {
-  /* margin-left: 10px; */
   width: 90%;
 }
+
 .cool-box {
   background-color: var(--color-dark-gray);
   border: solid 7px white;
@@ -194,7 +196,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.cool-box p {
+  font-size: 12px;
+}
 /*gradient section  */
 .section-gradient {
   background-image: linear-gradient(to right, #fff, DodgerBlue);
@@ -206,8 +210,8 @@ header {
 .gradient-text {
   text-align: right;
 }
-/* gallery section */
 
+/* gallery section */
 .section-gallery {
   padding-bottom: 50px;
 }
@@ -237,7 +241,6 @@ header {
 .image {
   width: 100%;
   height: 250px;
-
   object-fit: cover;
   object-position: center top;
   transition: transform 0.5s ease-in-out;
@@ -286,8 +289,8 @@ form {
   border: solid 2px var(--color-med-gray);
   border-radius: 4px;
   margin-right: 5px;
-  /* padding-right: 30px; */
 }
+
 .checkbox-label {
   font-size: 12px;
 }
@@ -313,6 +316,9 @@ footer {
   background-color: #494440;
 }
 
+.cool-box:hover h4 {
+  animation: cool-box-animation 1.5s ease-in-out;
+}
 .gallery-list li:hover .image {
   transform: scale(1.2);
 }
@@ -339,39 +345,49 @@ footer {
   outline: none;
 }
 
-@keyframes image-animation {
+@keyframes cool-box-animation {
   0% {
-    transform: scale(1);
+    transform: skew(0) scale(1);
   }
-  50% {
-    transform: scale(1.2);
+  25% {
+    transform: skew(20deg, 20deg) scale(1.2);
+  }
+  75% {
+    transform: skew(-20deg, -20deg) scale(1.2);
   }
   100% {
-    transform: scale(1);
+    transform: skew(0) scale(1);
   }
 }
 
 /* desktop view */
 @media (min-width: 768px) {
   h1 {
-    font-size: 52px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    font-size: 64px;
+    padding-bottom: 24px;
+    padding-top: 22px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 24px;
     padding: 20px;
   }
 
-  p {
-    font-size: 11px;
+  h4 {
+    font-size: 18px;
   }
 
+  p {
+    font-size: 13px;
+  }
+
+  label {
+    font-size: 16px;
+  }
   /* navigation bar desktop*/
   .nav-dropdown {
     display: flex;
@@ -411,6 +427,7 @@ footer {
   .section1-container {
     display: flex;
     max-width: 80%;
+    max-height: 560px;
     /* margin: auto; */
     border: solid 7px white;
   }
@@ -418,9 +435,13 @@ footer {
   .section1-text {
     background: rgba(0, 0, 0, 0.4);
     margin: 0px;
-    column-count: 2;
-    column-gap: 20px;
+    overflow: hidden;
   }
+
+  .section1-text div {
+    display: flex;
+  }
+
   .section1-text h2 {
     column-span: all;
     border-bottom: dashed 1px white;
@@ -428,8 +449,7 @@ footer {
   }
 
   .section1-text p {
-    font-size: 12px;
-    padding: 25px 0px 10px 0px;
+    padding: 25px 20px 10px 10px;
   }
 
   /* section feature */
@@ -443,9 +463,8 @@ footer {
   }
 
   /*cool text section  */
-
   .section-cool {
-    height: 425px;
+    height: 500px;
   }
   .cool-text {
     margin-left: 10px;
@@ -453,8 +472,9 @@ footer {
     text-overflow: hidden;
   }
   .cool-box {
-    /* top: 340px;   */
-    top: 425px;
+    padding: 20px;
+    width: 225px;
+    top: 500px;
     left: 30px;
     transform: translate(0%, -50%);
   }
@@ -462,7 +482,7 @@ footer {
   /* gradient section */
   .section-gradient {
     padding: 50px 0px;
-    height: 425px;
+    height: 500px;
   }
 
   .gradient-text {
@@ -482,7 +502,6 @@ footer {
   }
 
   .gallery-list li {
-    /* display: flex; */
     width: 100%;
   }
   .gallery-list p {
@@ -517,6 +536,5 @@ footer {
   .link-container {
     display: flex;
     justify-content: space-around;
-    /* font-size: 16px; */
   }
 }
