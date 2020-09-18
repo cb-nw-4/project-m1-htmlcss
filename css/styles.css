@@ -4,13 +4,16 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     color: black;
-    
+
 
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+/* NAVIGATION BAR */
+
 .navbar {
     display: flex;
 }
@@ -20,127 +23,367 @@ html {
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     color: white;
     background-color:#3a3633 ;
     list-style-type: none;
 }
 
+.nav > div {
+    display: flex;
+
+}
 
 .logo {
-    justify-content: flex-start;
     width: 30px;
 }
 
 .nav li {
     padding:10px 40px 10px 40px ;
-    
+
 }
-.menu {
+.menu  {
     color:white;
     cursor: pointer;
     text-decoration: none;
+    padding-bottom: 14px;
+    
+}
+.menu {
+    position: relative;
 }
 
-.menu:hover {
-    border-bottom: 4px solid white;
+.menu:after {
+    content: '';
+    position: absolute;
+    border-bottom:4px solid white ;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 0.7s;
 }
+
+.menu:hover:after {
+    right: 0;
+}
+
+/* .menu:hover {
+    border-bottom: 4px solid white;
+    
+    padding-bottom: 10px;
+    animation: slide 1s ease-out;
+} */
+
+
+
+/* BACKGROUND COVER SECTION */
 
 .background {
     width: 100%;
-    height: 800px;
     position: relative;
-    z-index: 1; 
-    object-fit: cover;  
+    z-index: 1;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .text-cover {
     display: flex;
-    align-items: center;
     position: absolute;
-    height: 400px;
+    top: 0;
+    height: 320px;
     color: white;
-    background-color: red;
     z-index: 2;
-    left: 50%;
-    top: 50%;
+    object-position: 100px;
+    border: 5px solid white;
+    text-align: center;
+    margin: 200px;
+}
+
+.text-cover-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 62px;
+    line-height: 100px;
+    height: 320px;
+    width: 380px;
+}
+
+.text-cover-right {
+    display: flex;
+    text-align: left;
+    flex-direction:column;
+    background-color: rgba(0,0,0,0.5);
+    height: 320px;
+    width: 580px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-cover-top-right {
+    display: flex;
+    padding-top: 30px;
+    font-size:40px ;
+    height: 120px;
+    border-bottom: 2px dotted ;
+
+}
+
+.text-cover-bottom-right {
+    display: flex;
+    padding-top: 20px;
+    height: 160px;
+    line-height: 18px;
+    fon
+}
+
+.text-cover-bottom-right > p {
+
+}
+
+
+/* AMAZING SECTION */
+
+.amazing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.amazing-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgb(233, 230, 230);
+    border-radius: 10px;
+
+}
+
+.it-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:#3a3633 ;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    padding-bottom: 15px;
+}
+
+/* ADVANTAGE SECTION */
+
+.advantage {
+    height: 800px;
+    position: relative;
 }
 
 .top-advantage {
+    height: 400px;
     color: white;
     background-color:#3a3633 ;
-    padding: 100px 60px 150px 30px;
+    padding: 100px 60px 200px 30px;
     box-sizing: border-box;
     font-size: 20px;
 }
-.top-advantage > h1 {
-    font-size: 50px ;
-    padding-bottom:50px ;
-}
 
 .bottom-advantage {
-    position: relative;
+    height: 160px;
     color: white;
-    background: linear-gradient(to right, white, blue) ;
+    background: linear-gradient(to right, white, rgb(5, 161, 252)) ;
     text-align: right;
     padding: 80px 30px 160px 60px;
-    z-index: 1;
 }
-.top-advantage > p {
-    line-height: 30px;
+
+.advantage-text > p {
+    font-size: 20px;
 }
-.bottom-advantage h1 {
-    font-size: 50px ;
+
+.advantage-text > h1 {
+    font-size: 80px ;
     padding-bottom:40px ;
-    z-index: 1;
 }
+
+.advantage-text {
+    line-height: 40px;
+}
+
+.cool-animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 340px;
+    left: 30px;
+    position: absolute;
+    height: 80px;
+    width: 220px;
+    border: 8px solid white;
+    background-color:#3a3633 ;
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+}
+
+.cool-animation > h3 {
+    color: red;
+    font-size:20px;
+}
+
+.cool-animation > p {
+    color: white;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+
+/* GALLERY SECTION */
 
 .gallery {
     width: 100%;
+    height: 600px;
+    
+
+}
+
+.top-pictures {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
+    
+    width:100%;
     
 }
 
-.row {
+.bottom-pictures {
     display: flex;
-    list-style-type: none;
-    margin: 0;
+    
+    width: 100%;
+    
 }
 
-.col {
-    margin: 0;
-}
-
-.image {
+.image-tesla {
+    
+    width: 100%;
     height: 300px;
-    margin: 0;
-    padding: 0;
+    object-fit: cover;
+    background-image: url(../imgs/tesla.jpg);
+    background-position: center;
+}
+
+.image-procat {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    background-image: url(../imgs/procat.jpg);
+    background-position: center;
+}
+
+.image-hyperloop {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    background-image: url(../imgs/hyperloop.jpg);
+    background-position: center;
+}
+
+.image-sneakycat {
+    width: 100%;
+    height: 300px;
+    background-image: url(../imgs/sneakycat.jpg);
+    background-position: center;
+}
+
+.image-falconrocket {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    background-image: url(../imgs/falconrocket.jpeg);
+    background-position: center;
+}
+
+.image-funnycat {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    background-image: url(../imgs/funnycat.jpg);
+    background-position: center;
+}
+
+/*  EMAIL REGISTER SECTION */
+
+.email-area {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    padding: 80px 20px 10px 20px;
+    height: 150px;
+    margin: auto;
+}
+
+.email-title {
+    text-align: left;
+    padding-bottom: 10px;
+
 }
 
 .register {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:30px ;
+    width: 350px;
+    height: 50px;
+    display:flex;
+
 }
+
+.email-box {
+    margin: 0;
+    padding: 0;
+    height:46px ;
+    width: 300px;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: grey;
+}
+
+.register-checkbox {
+    padding-top: 5px;
+}
+
+/* INFO SECTION */
 
 .info {
     display: flex;
     justify-content: space-evenly;
     height: 300px;
-    background-color: red;
     padding: 20px;
-    
+    border-top: 2px solid rgb(238, 234, 234);
+    margin: 0 50px 0 50px;
+
 }
 
 .row-list {
-    
-}
-.info-list {
     display: flex;
     flex-direction: column;
+}
+.info-list {
+    padding: 40px 15px 15px 15px;
 }
 .info-list > a {
     color: black;

@@ -10,12 +10,17 @@
   </head>
 
   <body>
+
+      <!--  NAVIGATION BAR  -->
+
     <div class="navbar">
         <nav class="nav">
+          
             <li><object class="logo" data="imgs/logo.svg" type="image/svg+xml"> 
               logo
                   </object>
             </li>
+            <div>
             <li>
               <a class="menu" href="#">Features</a>
             </li>
@@ -25,96 +30,137 @@
             <li>
               <a class="menu" href="#">Gallery</a>
             </li>
+          </div>
         </nav>
       </div>
+
+      <!-- BACKGROUND COVER SECTION -->
+
       <div class="background">
-        <img src="imgs/bg.jpg" alt="cover">
+        <img class="cover" src="imgs/bg.jpg" alt="cover">
         <div class="text-cover">
-              <div>
+              <div class="text-cover-left">
                 <p>Introducing Falcon 9</p>
               </div>
-                <div>
-                  <div>
+                <div class="text-cover-right">
+                  <div class="text-cover-top-right">
                     <p>We make dreams come true</p>
                   </div>
-                    <div>
+                    <div class="text-cover-bottom-right">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                      <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                          Lorem ipsum dolor sit amet.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet.</p>
                       </div>
                 </div>
         </div>
-      <div>
-      <section class=amazing>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      <div class="top-advantage">
-        <h1>Some cool text</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat, praesentium officiis eveniet ex animi minima esse dolorem dolore obcaecati dolor expedita voluptatem odit ea nobis veniam vitae suscipit consectetur!.</p>
       </div>
-      <div class="bottom-advantage">
-        <h1>Slick gradient</h1>
-        <p>Lorem ipsum?</p>
+
+        <!-- AMAZING SECTION -->
+
+      <div class="amazing">
+          <div class="amazing-box">
+            <div>
+            <img class="icon" src="imgs/icon_check.svg" alt="check">
+            <h2>Amazing feature 1</h2>
+          </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, error! Laborum dolorum accusantium aliquid fugit modi autem natus exercitationem? Dolorem, quo!</p>
+            <div class="it-box">Get it</div>
+          </div>
+          <div class="amazing-box"> 
+            <div>
+            <img class="icon" src="imgs/icon_reload.svg" alt="reload">
+            <h2>Amazing feature 2</h2>
+          </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, nam suscipit! Eius cupiditate.</p>
+            <div class="it-box">Sell it</div>
+          </div>
+          <div class="amazing-box">
+            <div>
+            <img class="icon" src="imgs/icon_fingerprint.svg" alt="fingerprint">
+            <h2>Amazing feature 3</h2>
+          </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur libero iste qui, dignissimos assumenda.</p>
+            <div class="it-box">Do it</div>
+          </div>
       </div>
-      <section class="gallery">
-        <ul class="row">
-          <li class="col">
-            <img class="image"src="imgs/tesla.jpg" alt="tesla">
-          </li>
-          <li class="col">
-            <img class="image"src="imgs/procat.jpg" alt="cool">
-          </li>
-          <li class="col">
-            <img class="image"src="imgs/hyperloop.jpg" alt="hyperloop">
-          </li>
-        </ul>
-      </section>
-      <section class="gallery">
-        <ul class="row">
-          <li class="col">
-            <img class="image"src="imgs/sneakycat.jpg" alt="sneaky">
-          </li>
-          <li class="col">
-            <img class="image"src="imgs/falconrocket.jpeg" alt="falcon">
-          </li>
-          <li class="col">
-            <img class="image"src="imgs/funnycat.jpg" alt="funny">
-          </li>
-        </ul>
-      </section>
-      <div class="register">
-        <label for="">Register to our malling list:</label>
-        <input type="text">
-        <input type="checkbox">
-        <label for="">Send me daily cat images</label>
+          <!-- ADVANTAGE SECTION -->
+
+          <div class="advantage">
+            <div class="top-advantage">
+              <div class="advantage-text">
+                <h1>Some cool text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugiat, praesentium officiis eveniet ex animi minima esse dolorem dolore obcaecati dolor expedita voluptatem odit ea nobis veniam vitae suscipit consectetur!.</p>
+              </div>
+            </div>
+              <div class="bottom-advantage">
+                <div class="advantage-text">
+                  <h1>Slick gradient</h1>
+                  <p>Lorem ipsum?</p>
+                </div>
+              </div>
+                <div class="cool-animation">
+                  <h3>This looks cool</h3>
+                  <p>Hover me if you like random animations</p>
+                </div>
+          </div>
+
+          <!-- GALLERY SECTION -->
+
+          <div class="gallery">
+            <div class="top-pictures">
+              <div class="image-tesla"></div>
+              <div class="image-procat"></div>
+              <div class="image-hyperloop"></div>
+            </div>
+            <div class="bottom-pictures">
+              <div class="image-sneakycat"></div>
+              <div class="image-falconrocket"></div>
+              <div class="image-funnycat"></div>
+            </div>
+          </div>
+      
+
+      <!-- EMAIL REGISTER SECTION -->
+
+      <div class="email-area">
+        <div>
+          <h1 class="email-title">Register to our malling list:</h1>
+            <div class="register">
+              <input class="email-box" type="text">
+              <button class="arrow"><img src="imgs/icon_send.svg" ></button> 
+            </div>
+                <div class="register-checkbox">
+                  <input  type="checkbox">
+                  <label for="">Send me daily cat images</label>
+                </div>
+        </div>
       </div>
+
+      <!-- INFO SECTION -->
+
         <div class="info">
-          <ul class="row-list">
+          <ul class="col-list">
               <li class="info-list"><a href="#">About us</a></li>
               <li class="info-list"><a href="#">Privacy Policy</a></li>
               <li class="info-list"><a href="#">Legal notes</a></li>
               <li class="info-list"><a href="#">Copyright</a></li>
           </ul>
-            <ul class="row-list">
+            <ul class="col-list">
               <li class="info-list"><a href="#">About us</a></li>
               <li class="info-list"><a href="#">Privacy Policy</a></li>
               <li class="info-list"><a href="#">Legal notes</a></li>
               <li class="info-list"><a href="#">Copyright</a></li>
           </ul>
-          <ul class="row-list">
+          <ul class="col-list">
               <li class="info-list"><a href="#">About us</a></li>
               <li class="info-list"><a href="#">Privacy Policy</a></li>
               <li class="info-list"><a href="#">Legal notes</a></li>
               <li class="info-list"><a href="#">Copyright</a></li>
           </ul>
-          <ul class="row-list">
+          <ul class="col-list">
               <li class="info-list"><a href="#">About us</a></li>
               <li class="info-list"><a href="#">Privacy Policy</a></li>
               <li class="info-list"><a href="#">Legal notes</a></li>
