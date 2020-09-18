@@ -6,10 +6,162 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- write some HTML! -->
+    <header>
+      <nav class="navigationBar">
+        <ul class="navBarItems">
+          <img src="imgs/logo.svg" alt="logo">
+          <li>
+            <div class="dropdownContainer">
+              <img class="dropdownButton" src="imgs/menu.svg" alt="menuButton">
+              <ul class="dropdownContent">
+                <li><a href="#features"></a>Features</li>
+                <li><a href="#advantages"></a>Advantages</li>
+                <li><a href="#gallery"></a>Gallery</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topSection">
+      <img src="imgs/bg.jpg" alt="rocket">
+      <div class="TStext">
+        <h2 class="topSectionTitle">Introducing Falcon 9</h2>
+        <div class="TSContentBox">
+          <h3 class="topSection-Content">We Make Dreams Come True</h3>
+            <div class="TSparagraphs">
+              <p class="topSection-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <p class="topSection-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="features">
+    <div class="featuresContainer">
+    <div class="feature1">
+      <img src="imgs/icon_check.svg" alt="check mark">
+      <h3>Amazing Feature 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet.</p>
+      <button class="featuresButton" type="button">
+        Get it
+      </button>
+    </div>
+    <div class="feature2">
+      <img src="imgs/icon_reload.svg" alt="reload">
+      <h3>Amazing Feature 2</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+      <button class="featuresButton" type="button">
+        Sell it
+      </button>
+    </div>
+    <div class="feature3">
+      <img src="imgs/icon_fingerprint.svg" alt="fingerprint">
+      <h3>Amazing Feature 3</h3>
+      <p>Excepteur sint occaecat cupidatat non prodient, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button class="featuresButton" type="button">
+        Do it
+      </button>
+    </div>
+    </div>
+    </section>
+
+  <section id="advantages">
+    <div class="advantagesContianer">
+      <div class="advantages1">
+        <h3>Some cool text</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Magni quas perspiciatis
+expedita impedit illo natus pariatur deserunt</p>
+      </div>
+      <div class="advantages3">
+        <h3>Slick gradient</h3>
+        <p>Lorem ipsum?</p>
+      <div class="advantages2">
+        <h4>This looks cool</h4>
+        <p>Hover me if you like random
+animations</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="gallery">
+      <div class="galleryContainer">
+        <div class="imageRow1">
+          <div class="imageContainer">
+            <img class="galleryImage" src="imgs/tesla.jpg" alt="tesla">
+              <span class="galleryText">Our flagship car: The model S</span>
+          </div>
+          <div class="imageContainer">
+            <img class="galleryImage" src="imgs/procat.jpg" alt="cat1">
+              <span class="galleryText">Cool cat</span>
+          </div>
+          <div class="imageContainer">
+            <img class="galleryImage" src="imgs/hyperloop.jpg" alt="hyperloop">
+              <span class="galleryText">Introducing: The Hyperloop</span>
+          </div>
+      </div>
+      <div class="imageRow2">
+        <div class="imageContainer">
+            <img class="galleryImage" src="imgs/sneakycat.jpg" alt="cat2">
+              <span class="galleryText">So sneaky</span>
+          </div>
+          <div class="imageContainer">
+            <img class="galleryImage" src="imgs/falconrocket.jpeg" alt="rocket">
+              <span class="galleryText">BFR: Big Falcon Rocket</span>
+          </div>
+          <div class="imageContainer">
+            <img class="galleryImage" src="imgs/funnycat.jpg" alt="cat3">
+              <span class="galleryText">So much fun</span>
+          </div> 
+      </div>
+      </div>
+    </section>
+
+<section>
+  <div class="mailingList">
+    <label for="email">Register for our mailing list:</label>
+    <div class="emailInput">
+      <input type="email" id="email">
+      <button><img src="imgs/icon_send.svg" alt="send button"></button>
+    </div>
+    <div class="register">
+      <input type="checkbox" id="checkbox" name="sendMe">
+      <label for="checkbox">Send me daily cat images</label>
+</div>
+</div>
+</section> 
+<footer>
+  <div class="column">
+    <p>About us</p>
+    <p>Privacy Policy</p>
+    <p>Legal notes</p>
+    <p>Copyright</p>
+  </div>
+  <div class="column">
+    <p>About us</p>
+    <p>Privacy Policy</p>
+    <p>Legal notes</p>
+    <p>Copyright</p>
+  </div>
+  <div class="column">
+    <p>About us</p>
+    <p>Privacy Policy</p>
+    <p>Legal notes</p>
+    <p>Copyright</p>
+  </div>
+  <div class="column">
+    <p>About us</p>
+    <p>Privacy Policy</p>
+    <p>Legal notes</p>
+    <p>Copyright</p>
+  </div>
+</footer>
   </body>
 </html>

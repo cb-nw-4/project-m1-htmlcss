@@ -1,0 +1,475 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+/* navigation bar code */
+.navigationBar{
+    position: relative;
+    background-color: #3a3633;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navBarItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBarItems > img {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.dropdownButton{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.dropdownContainer{
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #3a3633;
+}
+
+.dropdownContent > li{
+    padding: 12px;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.dropdownContainer:hover .dropdownContent{
+    display: inline-block;
+    position: absolute;
+    z-index: 4;
+}
+
+.dropdownContent > li:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* first section code */
+.topSection{
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.topSection img + .TStext {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.TStext {
+    color: white;
+}
+
+.topSection > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.topSectionTitle{
+    padding-left: 25px;
+}
+
+.TSContentBox {
+    border: 1px;
+    padding: 1em;
+    background-color: #ffffff;
+    background: rgba(0, 0, 0, 0.1);
+    max-height: 100%;
+}
+
+.topSection-Content {
+    padding-left: 10px;
+    margin: 0;
+}
+
+/* second section code */
+.featuresContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature1, .feature2, .feature3{
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 10px 5px rgba(201,201,201,1);
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.feature1 > img, .feature2 > img, .feature3 > img{
+    width: 50px;
+    margin-top: 20px;
+}
+
+.feature1 > p, .feature2 > p, .feature3 > p {
+    color: gray;
+    margin: 20px;
+}
+
+.feature1 > button, .feature2 > button, .feature3 > button {
+    width: 90%;
+    color: white;
+    background-color: #3a3633;
+    font-size: 12pt;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.feature2 > button, .feature3 > button{
+    margin-top: 50px;
+}
+
+.feature1 > button:hover, .feature2 > button:hover, .feature3 > button:hover {
+    border: 1px solid yellow;
+    cursor: pointer;
+}
+
+/* third section code */
+.advantagesContainer {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.advantages1 {
+    background-color: #3a3633;
+    color: white;
+    z-index: 2;
+    height: 400px;
+    position: relative;
+}
+
+.advantages1 > h3, .advantages3 > h3{
+    font-size: 30pt;
+    padding: 100px 10px 0;
+}
+
+.advantages1 > p, .advantages3 > p{
+    font-size: 14pt;
+    padding: 0 10px 0;
+    white-space: pre;
+}
+
+.advantages3 {
+    position: relative;
+    background-image: linear-gradient(to left,#38A1F4,#8AC7F9,#FFFFFF);
+    color: white;
+    z-index: 2;
+    text-align: right;
+    height: 400px;
+    top: -40px;
+}
+
+.advantages2 {
+    background-color: #3a3633;
+    border: 8px solid white;
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    bottom: 325px;
+}
+
+.advantages2 > h4 {
+    color: red;
+    font-size: 18pt;
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+}
+
+.advantages2 > p {
+    color: white;
+    font-size: 14px;
+    white-space: pre;
+    text-align: center;
+}
+
+/* fourth section code */
+.galleryContainer {
+    max-width: 100%;
+    margin: 0;
+    top: -40px;
+    bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.galleryContainer > .imageRow1, .imageRow2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryImage {
+    align-self: center;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+    transition: transform 2s;
+    max-height: 500px;;
+}
+
+.imageContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.galleryText{
+    position: absolute;
+    color: white;
+    font-size: 12pt;;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+    z-index: 3;
+    transform: translate(100px,100px);
+}
+
+.galleryImage:hover{
+    transform: scale(1.2);
+}
+
+.galleryText:hover{
+    display: block;
+    opacity: 1;
+}
+
+/* fifth section code */
+.mailingList {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 0;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.emailInput {
+    position: relative;
+}
+
+.emailInput > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+}
+
+.emailInput > input {
+    width: 150px;
+    height: 20px;
+}
+
+.emailInput > button{
+    max-height: 30px;
+}
+
+/* footer code */
+.footer{
+    border-top-style: 1em solid gray;
+}
+
+.footer > .column{
+    position: absolute;
+    margin-left: 50px;
+}
+
+@media screen and (min-width: 780px) {
+/* navigation bar code */
+.dropdownButton > img{
+        display: none;
+    }
+
+.navBarItems > img {
+        visibility: visible; 
+        position: relative;
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+        padding-left: 10px;
+    }
+
+.dropdownContent{
+        visibility: visible;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+    }
+    
+.dropdownContent > li{
+        float: right;
+        text-align: right;
+        padding: 12px;
+        list-style: none;
+        color: white;
+        margin: 10px;
+    }
+
+    .dropdownContent > li:hover{
+        text-decoration: underline;
+    }
+
+/* first section code */
+.topSection{
+    position: relative;
+}
+
+.topSection > img{
+    width: 100%;
+}
+
+.TStext {
+    border: 5px solid white;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 4em;
+    margin-right: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topSectionTitle{
+    font-size: 36pt;
+}
+    
+.TSContentBox > h3{
+    font-size: 24pt;
+    border-bottom: 1px dashed gray;
+    box-sizing: content-box; 
+    max-width: 100%;
+}
+    
+.topSection-Content {
+    padding-left: 10px;
+    margin: 0;
+}
+
+.TSparagraphs{
+    display: flex;
+    flex-direction: column;
+}
+
+/* second section code */
+.featuresContainer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 2em 10px;
+}
+
+.feature1, .feature2, .feature3{
+    margin: 0 30px 10px;
+    flex: 0 0 40vh;
+}
+
+/* third section code */
+.advantages1 > h3, .advantages3 > h3{
+    font-size: 36pt;
+}
+
+.advantages1 > p, .advantages3 > p{
+    white-space: pre-wrap;
+}
+
+.advantages3 {
+    position: relative;
+    top: -50px;
+}
+
+.advantages2 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 70%;
+}
+
+/* fourth section code */
+.galleryContainer > .imageRow1, .imageRow2{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.imageRow1, .imageRow2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 270px;
+}
+.imageRow1 > img, .imageRow2 > img {
+    object-fit: contain;
+    max-height: 270px;
+}
+
+/* footer */
+.column{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.column > p{
+    text-align: left;
+}
+}
