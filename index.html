@@ -1,15 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+    <meta charset="utf-8">
+    <title>Responsive Banner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
 
+  </head>
   <body>
-    <!-- write some HTML! -->
+    <nav class="navbar">     <!-- mobilenav  start here -->
+    <div class="brand-title">
+      <img src="https://raw.githubusercontent.com/cb-nw-4/project-m1-htmlcss/6013ec667334e2895cc006b1d01b172be0f83909/imgs/logo.svg" alt="logo">
+    </div>
+    <div class="dropdown"> <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+      <div class="navbar-links">
+        <ul class="dropdown-content">
+    <li class="dropdown-content-items"><a href="#">Features</a></li>
+    <li class="dropdown-content-items"><a href="#">Advantages</a></li>
+    <li class="dropdown-content-items"><a href="#">Gallary</a></li>
+    <li class="dropdown-content-items"><a href="#">Contact</a></li>
+</ul>
+    </div>
+</div>
+  </nav>     <!-- desktop nav start here -->
+  <nav class="desktop-nav">
+     <div class="brand-title">
+      <img src="https://raw.githubusercontent.com/cb-nw-4/project-m1-htmlcss/6013ec667334e2895cc006b1d01b172be0f83909/imgs/logo.svg" alt="logo">
+    </div>
+    <div class="desktop-navbar-links">
+        <ul class="desktop-dropdown-content">
+    <li class="desktop-dropdown-content-items"><a href="#">Features</a></li>
+    <li class="desktop-dropdown-content-items"><a href="#">Advantages</a></li>
+    <li class="desktop-dropdown-content-items"><a href="#">Gallary</a></li>
+    <li class="desktop-dropdown-content-items"><a href="#">Contact</a></li>
+</ul>
+    </div>
+       </nav>
+    <!-- Hero Image start here -->
+    <div class="img-container">
+      <div class="inner-container">
+        <h1>Introducing Falcon 9<h1>
+          <div class="inner-inner-container">
+          <h2> We make dreams come true</h2>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          
+        </div>
+      </div>
+    </div>
+            <!-- feature section start here  -->
+
+         <div class="parent">
+      <div class="child1">
+         <div class="icon">
+      <img src="https://raw.githubusercontent.com/cb-nw-4/project-m1-htmlcss/6013ec667334e2895cc006b1d01b172be0f83909/imgs/icon_check.svg" alt="checkmark-icon" width="25" height="25">
+    </div>
+        <div class="content">
+        <h2>Amazing Feature 1<h2>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
+    </div>
+    <div class="buttongetit">
+      <button type="button">Get it</button>
+        </div>
+      </div>
+          <div class="child2">
+         <div class="icon">
+      <img src="https://raw.githubusercontent.com/cb-nw-4/project-m1-htmlcss/6013ec667334e2895cc006b1d01b172be0f83909/imgs/icon_check.svg" alt="checkmark-icon" width="25" height="25">
+    </div>
+        <div class="content">
+        <h2>Amazing Feature 2<h2>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
+    </div>
+    <div class="buttongetit">
+      <button type="button">Get it</button>
+        </div>
+      </div>
+          
+              <div class="child3">
+         <div class="icon">
+      <img src="https://raw.githubusercontent.com/cb-nw-4/project-m1-htmlcss/6013ec667334e2895cc006b1d01b172be0f83909/imgs/icon_check.svg" alt="checkmark-icon" width="25" height="25">
+    </div>
+        <div class="content">
+        <h2>Amazing Feature 3<h2>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
+    </div>
+    <div class="buttongetit">
+      <button type="button">Get it</button>
+        </div>
+      </div>
+    </div>
+                    <!-- split background start here -->
+
+                <div class="first">
+  <h3>Some cool text</h3>
+  <h5>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h5>
+</div>
+<div class="second">
+  <div class="third">
+    <h4 id="h4-top">This looks cool<h4>
+      <p>Hover me if you like random animations</p>
+  </div>
+      <h2>Sick Gradient</h2>
+      <p>Lorem Ipsum?</p>
+</div>
+        <!-- Gallery  start here -->
+
+<div class="gallery-row">
+<div class="containergallery">
+  <img src="imgs/tesla.jpg" alt="tesla" class="imageinsidegallery">
+  <div class="overlay1">
+    <div class="gallerytext">Hello World</div>
+  </div>
+</div>
+  <div class="containergallery">
+  <img src="imgs/procat.jpg" alt="procat" class="imageinsidegallery">
+  <div class="overlay1">
+    <div class="gallerytext">Hello World</div>
+  </div>
+</div>
+  <div class="containergallery">
+  <img src="imgs/hyperloop.jpg" alt="hyperloop" class="imageinsidegallery">
+  <div class="overlay1">
+    <div class="gallerytext">Hello World</div>
+  </div>
+</div>
+  </div>
+  <div class="gallery-row">
+  <div class="containergallery">
+  <img src="imgs/sneakycat.jpg" alt="sneakycat" class="imageinsidegallery">
+  <div class="overlay1">
+    <div class="gallerytext">Hello World</div>
+  </div>
+</div>
+  <div class="containergallery">
+  <img src="imgs/falconrocket.jpeg" alt="falcon rocket" class="imageinsidegallery">
+  <div class="overlay1">
+    <div class="gallerytext">Hello World</div>
+  </div>
+</div>
+  <div class="containergallery">
+  <img src="imgs/funnycat.jpg" alt="funny cat" class="imageinsidegallery">
+  <div class="overlay1">
+    <div class="gallerytext">Hello World</div>
+  </div>
+</div>
+  </div>   
+        <!-- Email sign up start here -->
+
+    <form class="signupform">
+      <h2>Register for our mailing list </h2>
+  <div class="emailform">
+  <input type="text" name="mail" required>
+    <label>
+          <button type="button" class="sendbutton"></button>
+      
+  </div>
+<div class="optin">
+            <input type="checkbox">Send me daily cat images
+    </label>
+  <div>
+  </form>
+    
+    </div>
+      <!-- f ooterstart here -->
+
+<footer class="footer">
+    <ul class="footer-col">
+      <li class="footer-items"><a href="#Aboutus">About us</a></li>
+      <li class="footer-items"><a href="#Privacy">Privacy Policy</a></li>
+      <li class="footer-items"><a href="#Legal">Legal Notes</a></li>
+      <li class="footer-items"><a href="#Copyright">Copyright</a></li>
+    </ul>
+    <ul class="footer-col">
+      <li class="footer-items"><a href="#Aboutus">About us</a></li>
+      <li class="footer-items"><a href="#Privacy">Privacy Policy</a></li>
+      <li class="footer-items"><a href="#Legal">Legal Notes</a></li>
+      <li class="footer-items"><a href="#Copyright">Copyright</a></li>
+    </ul>
+    <ul class="footer-col">
+      <li class="footer-items"><a href="#Aboutus">About us</a></li>
+      <li class="footer-items"><a href="#Privacy">Privacy Policy</a></li>
+      <li class="footer-items"><a href="#Legal">Legal Notes</a></li>
+      <li class="footer-items"><a href="#Copyright">Copyright</a></li>
+    </ul>
+    <ul class="footer-col">
+      <li class="footer-items"><a href="#Aboutus">About us</a></li>
+      <li class="footer-items"><a href="#Privacy">Privacy Policy</a></li>
+      <li class="footer-items"><a href="#Legal">Legal Notes</a></li>
+      <li class="footer-items"><a href="#Copyright">Copyright</a></li>
+    </ul>
+    </footer>
   </body>
-</html>
+  <html>
+    

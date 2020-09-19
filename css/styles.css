@@ -1,3 +1,11 @@
-@import 'css-reset.css';
+.container{
+  border: 2px solid black;
+  margin: 10px;
+}
+.box{
+    display: flex;
 
-/* CSS here :) */
+    border: 2px solid green;
+
+  
+}
