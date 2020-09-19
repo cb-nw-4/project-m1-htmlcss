@@ -3,15 +3,14 @@
 /* CSS here :) 
 
 border-radius (`4px`) 
-  var(--second-color);
+var(--second-color);
 */
+
 :root {
   --main-color: #3a3633; 
-  --second-color: lightgray;
+  --second-color: #989898;
   --border-radius: 4px;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -39,12 +38,12 @@ body {
   justify-content: space-between;   
   overflow: hidden;      
   background-color: var(--main-color);   
-  z-index: 4;
+  z-index: 2;
 }
 
 .navbar a {
   float: left;       
-  color: white;
+  color: 	#F0F0F0;
   padding: 15px;
   text-decoration: none;   
 }
@@ -117,9 +116,9 @@ body {
 }
 
 .header-text {
-  background-color: rgba(54, 50, 50, 0.4);
+  background-color: rgba(54, 50, 50, 0.3);
   margin: 0;
-  padding: 5px 0;
+  padding: 15px 5px;;
 }
 
 
@@ -134,9 +133,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid 3px var(--second-color);
+  border: solid 2px	#F0F0F0;
   border-radius: var(--border-radius);
-  box-shadow: 2px 2px 2px var(--second-color);
+  box-shadow: 2px 2px 2px	#F0F0F0;
   width: 280px;
   height: 350px;
   text-align: center;
@@ -148,20 +147,20 @@ body {
   }
 
 .features-box p {
-  font-size: 14px;
+color: var(--second-color);
 }
   
 .features-button {
   background-color: var(--main-color);
   color: white;
   border: none;
+  outline: none;
   border-radius: var(--border-radius);
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;  
 }
   
- 
 .features-icon {
   width: 17%;
   margin-top: 10px;
@@ -185,15 +184,16 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
-  padding: 30px 20px 0 20px;
+  padding: 60px 20px 0 20px;
   background-color: var(--main-color);
   color: white;
   width: 100%;
-  height: 300px;
+  height: 375px;
 }
 
 .advantages h2 {
   font-size: 40px;
+  padding: 0;
 }
 
 .cool-slick p {
@@ -201,7 +201,8 @@ body {
 }
 
 .cool-slick p, .gradient p {
-  margin-top: 15px;
+  margin-top: 50px;
+  font-size: 18px;
 }
 
 .looks-cool {
@@ -228,9 +229,9 @@ body {
 }
 
 .gradient {  
-  background-image: linear-gradient(to right, rgba(0,175,245,0), rgba(0,175,245,1));
+  background-image: linear-gradient(to right, rgba(0,175,245,0), rgb(29, 117, 218));
   width: 100%;
-  height: 280px;
+  height: 375px;
   color: white;
   text-align: right;
   display: flex;
@@ -245,7 +246,6 @@ body {
   display: block;
   overflow: hidden;
   position: relative;
-
 }
 
 .images img{
@@ -269,7 +269,7 @@ body {
   top: 46%;
   color: white;
   font-size: 20px;;
-  text-shadow: 2px 2px var(--main-color);
+  text-shadow: 2px 2px var(--second-color);
 }
 
 .images:hover .pics-text{
@@ -285,6 +285,7 @@ body {
   display: flex;
   justify-content: center; 
   padding: 50px 0;
+  font-size: 14px;
 }
 
 .register {
@@ -308,30 +309,37 @@ body {
 .mail-form {
   display: flex;
   flex-direction: column;
+  color:  #4a4541;
 }
 
 .mail-form div {
   padding: 5px 0;
 }
 
-.cat-pics {
-  font-size: 14px;
-}
 
 /*footer*/
 .footer {
   margin: 30px;
-  border-top: solid 1px lightgray;
-  line-height: 2;
+  border-top: solid 1px var(--second-color);
+  line-height: 2.5;
   display: block;
   color: #4a4541;
   list-style-type: none;
   padding: 20px;
+  margin-top: 0;
 }
 
 
 
+
 @media (min-width: 768px) {
+.small-font{
+  font-size: 12px;
+}
+
+.big-title {
+  font-size: 50px;
+}
 
 
 /*nav bar*/
@@ -359,12 +367,13 @@ body {
 .wide-dropdown a {
   display: inline-block;
   position: relative;
+  font-size: 14px;
   margin: 0 20px 0 20px;
 }
     
 .wide-dropdown a:after {
   position: absolute;
-  background:white;
+  background:	#F0F0F0;;
   content: "";
   bottom: 0;
   height: 2px;
@@ -387,30 +396,32 @@ body {
 .head {
   display: flex;
   flex-direction: row;
-  width: 65%;
+  width: 75%;
   border: solid 5px white;
   margin: 25px auto 0 auto;
   overflow: hidden;
 }
 
 .head h1 {
-  padding: 25px 10px;
-  font-size: 50px;
+  padding-top: 12%;
+  font-size: 60px;
 }
 
 .header-text {
-  padding: 30px;
+  padding: 20px 10px;
 }
 
 .header-text h2 {
   border-bottom: dashed 1px white;
-  padding-bottom: 15px;
-  font-size: 30px;
+  padding: 20px;
+  font-size: 40px;
 }
       
 .header-text p {
   column-count: 2;
+  padding-top: 20px;
   }
+
 
 /*amazing features*/
 .features {
@@ -432,14 +443,17 @@ body {
   left: 12%;
 }
 
+.advantages h2 {
+  font-size: 50px;
+}
+
 
 /*gallery*/
 .gallery {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 0;
-  width: 70%;   
-  margin: 0 auto;
+  width: 100%;   
 }
 
 .images img {
@@ -447,12 +461,12 @@ body {
   height: 200px;
 }
 
+
 /*footer*/
 .footer {
   display: flex;
   justify-content: space-around;
 }
-
 } 
 
 
