@@ -400,123 +400,127 @@ input[type=checkbox] + label {
         }
        /* Section Gallery */
 
-.gallery-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+        .gallery-main {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        }
 
-.gallery-image {
-    position: relative;
-}
+        .gallery-image {
+            width: calc(100%/3);
+            /* height: auto; */
+            overflow: hidden;
+        }
 
-.gallery-image img{
-    /* position: absolute; */
-    transition: all ease 0.2ms;
-    object-fit: cover;
-}
+        .gallery-image img{
+            transition: all ease 0.2ms;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
 
-.gallery-image:hover img{
-    transform: scale(1.2);
-}
+        }
 
-.gallery-image p {
-    display: none;
-    position: absolute;
-    text-align: center;
-    font-size: 18px;
-    top: calc(50%);
-    width: 100%;
-    color: white;
-    text-shadow: 1px 2px gray;
-    z-index: 2;
-}
+        .gallery-image:hover img{
+            transform: scale(1.2);
+        }
 
-.gallery-item:hover p{
-    display: block;
-}
+        .gallery-image p {
+            display: none;
+            position: absolute;
+            text-align: center;
+            font-size: 18px;
+            top: calc(50%);
+            width: 100%;
+            color: white;
+            text-shadow: 1px 2px gray;
+            z-index: 2;
+        }
 
-
-
-
-/* Section Mailing List */
-
-.mailing-list-main {
-    width: 100vw;
-    padding: 50px auto;
-    display: block;
-    margin: 0px auto;
-    text-align: center; 
-}
-
-.mailing-list-main p {
-    color: lightslategrey;
-}
-
-.checkbox-main p {
-    font-size: x-small;
-}
-
-.text-button {
-    display: flex;
-    justify-content: center;
-    height: 25px;
-    padding-bottom: 5px;
-}
-
-.text-button button{
-    border-width: 0px;
-    border-radius: 0px 2px 2px 0px ;
-}
-
-input[type=text] {
-    background-color: white;
-    border: 2px solid #ebeceb;
-    border-radius: 2px 0px 0px 2px ;
-    height: auto;
-}
-
-input[type=checkbox] + label {
-    color: #ccc;
-    font-style: normal;
-    font-size: x-small;
-  } 
-  input[type=checkbox]:checked + label {
-    color: rgb(124, 138, 162);
-    font-style: normal;
-  } 
+        .gallery-item:hover p{
+            display: block;
+        }
 
 
-/* Section Footer */
 
-.footer-main {
-    width: 100%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-around;
-}
 
-.footer-col {
-    margin-top: none;
-    list-style-type: none;
+        /* Section Mailing List */
 
-}
+        .mailing-list-main {
+            width: 100vw;
+            padding: 50px auto;
+            display: block;
+            margin: 0px auto;
+            text-align: center; 
+        }
 
-.footer-li {
-    font-weight: 200;
-}
+        .mailing-list-main p {
+            color: lightslategrey;
+        }
 
-.footer-li a {
-    text-decoration: none;
-}
+        .checkbox-main p {
+            font-size: x-small;
+        }
 
-.footer-li a:link {
-    color: rgb(45, 52, 60);
-}
+        .text-button {
+            display: flex;
+            justify-content: center;
+            height: 25px;
+            padding-bottom: 5px;
+        }
 
-.footer-li a:hover {
-    text-decoration: underline;
-}
+        .text-button button{
+            border-width: 0px;
+            border-radius: 0px 2px 2px 0px ;
+        }
+
+        input[type=text] {
+            background-color: white;
+            border: 2px solid #ebeceb;
+            border-radius: 2px 0px 0px 2px ;
+            height: auto;
+        }
+
+        input[type=checkbox] + label {
+            color: #ccc;
+            font-style: normal;
+            font-size: x-small;
+        } 
+        input[type=checkbox]:checked + label {
+            color: rgb(124, 138, 162);
+            font-style: normal;
+        } 
+
+
+        /* Section Footer */
+
+        .footer-main {
+            width: 100%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-col {
+            margin-top: none;
+            list-style-type: none;
+
+        }
+
+        .footer-li {
+            font-weight: 200;
+        }
+
+        .footer-li a {
+            text-decoration: none;
+        }
+
+        .footer-li a:link {
+            color: rgb(45, 52, 60);
+        }
+
+        .footer-li a:hover {
+            text-decoration: underline;
+        }
 
 
 }
