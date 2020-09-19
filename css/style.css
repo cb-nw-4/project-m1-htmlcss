@@ -16,6 +16,10 @@ h1 {
 h3 {
     font-size: 1.2rem;
 }
+h4 {
+    margin: 0px;
+}
+
 p {
     font-weight: 300;
 }
@@ -149,6 +153,14 @@ p {
     border-radius: 5px;
 }
 
+
+.icon img {
+        height: 24px;
+        width: auto;
+        margin: 5px;
+    }  
+
+
 /* Section Cool-Text */
 
 .cool-text-main {
@@ -253,6 +265,16 @@ input[type=text] {
     border-radius: 2px 0px 0px 2px ;
     height: auto;
 }
+
+input[type=checkbox] + label {
+    color: #ccc;
+    font-style: normal;
+    font-size: x-small;
+  } 
+  input[type=checkbox]:checked + label {
+    color: rgb(124, 138, 162);
+    font-style: normal;
+  } 
 
 
 /* Section Footer */
@@ -453,6 +475,16 @@ input[type=text] {
     border-radius: 2px 0px 0px 2px ;
     height: auto;
 }
+
+input[type=checkbox] + label {
+    color: #ccc;
+    font-style: normal;
+    font-size: x-small;
+  } 
+  input[type=checkbox]:checked + label {
+    color: rgb(124, 138, 162);
+    font-style: normal;
+  } 
 
 
 /* Section Footer */
