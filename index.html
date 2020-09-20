@@ -14,25 +14,42 @@
       <!--  NAVIGATION BAR  -->
 
     <div class="navbar">
-        <nav class="nav">
+      <nav class="nav">
           
-            <li><object class="logo" data="imgs/logo.svg" type="image/svg+xml"> 
-              logo
+          <li><object class="logo" data="imgs/logo.svg" type="image/svg+xml"> 
                   </object>
-            </li>
-            <div>
-            <li>
-              <a class="menu" href="#">Features</a>
-            </li>
-            <li>
-              <a class="menu"  href="#">Advantages</a>
-            </li>
-            <li>
-              <a class="menu" href="#">Gallery</a>
-            </li>
+          </li>
+            <div class="desktop-nav">
+              <li>
+                <a class="menu" href="#amazing">Features</a>
+              </li>
+              <li>
+                <a class="menu"  href="#advantages">Advantages</a>
+              </li>
+              <li>
+                <a class="menu" href="#gallery">Gallery</a>
+              </li>
+            </div>
+        
+        <div class="mobile-nav">
+          <button class="mobile-nav-button" aria-label="Show menu">
+            <img src="imgs/menu.svg"/>
+          </button>
+          <div class="mobile-menu">
+            <div class="mobile-selection">
+              <a  href="#amazing">Features</a>
+              <a  href="#advantages">Advantages</a>
+              <a  href="#gallery">Gallery</a>
+            </div>
           </div>
         </nav>
       </div>
+
+      <!-- NAVIGATION MOBILE MENU -->
+      
+      
+
+
 
       <!-- BACKGROUND COVER SECTION -->
 
@@ -60,7 +77,7 @@
 
         <!-- AMAZING SECTION -->
 
-      <div class="amazing">
+      <div id="amazing">
           <div class="amazing-box">
             <div>
             <img class="icon" src="imgs/icon_check.svg" alt="check">
@@ -88,7 +105,7 @@
       </div>
           <!-- ADVANTAGE SECTION -->
 
-          <div class="advantage">
+          <div id="advantages">
             <div class="top-advantage">
               <div class="advantage-text">
                 <h1>Some cool text</h1>
@@ -109,16 +126,46 @@
 
           <!-- GALLERY SECTION -->
 
-          <div class="gallery">
+          <div id="gallery">
             <div class="top-pictures">
-              <div class="image-tesla"></div>
-              <div class="image-procat"></div>
-              <div class="image-hyperloop"></div>
+
+              <div class="container-image">
+                <div class="image-tesla">
+                  <p class="text-hidden">Random text</p>
+                </div>
+              </div>
+
+              <div class="container-image">
+                <div class="image-procat">
+                  <p class="text-hidden">Random text</p>
+                </div>
+              </div>
+
+              <div class="container-image">
+                <div class="image-hyperloop">
+                  <p class="text-hidden">Random text</p>
+                </div>
+              </div>
             </div>
             <div class="bottom-pictures">
-              <div class="image-sneakycat"></div>
-              <div class="image-falconrocket"></div>
-              <div class="image-funnycat"></div>
+
+              <div class="container-image">
+                <div class="image-sneakycat">
+                  <p class="text-hidden">Random text</p>
+                </div>
+              </div>
+
+              <div class="container-image">
+                <div class="image-falconrocket">
+                  <p class="text-hidden">Random text</p>
+                </div>
+            </div>
+
+              <div class="container-image">
+                <div class="image-funnycat">
+                  <p class="text-hidden">Random text</p>
+                </div>
+              </div>
             </div>
           </div>
       

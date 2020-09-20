@@ -12,10 +12,72 @@ html {
     scroll-behavior: smooth;
 }
 
+/* MOBILE NAVIGATION */
+
+
+.mobile-nav {
+width: 50px;
+    background-color:#3a3633 ;
+    display: none;
+}
+
+.mobile-nav-button {
+    background-color:#3a3633 ;
+    border: none;
+}
+
+.mobile-nav-button > img {
+    width: 40px;
+    height: 40px;
+    padding:10px 0 10px 0;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    z-index: 3;
+    
+}
+
+.mobile-selection {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:#3a3633 ;
+    z-index: 3;
+}
+
+.mobile-selection > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: 24px;
+    height: 50px;
+    width: 100%;
+}
+
+.mobile-selection a:hover {
+    background-color:#5e5650 ;
+}
+
+.mobile-nav:hover .mobile-selection {
+    display:block ;
+}
+
+
+
 /* NAVIGATION BAR */
 
 .navbar {
     display: flex;
+    width: 100%;
 }
 
 .nav {
@@ -29,9 +91,8 @@ html {
     list-style-type: none;
 }
 
-.nav > div {
+.desktop-nav {
     display: flex;
-
 }
 
 .logo {
@@ -40,8 +101,8 @@ html {
 
 .nav li {
     padding:10px 40px 10px 40px ;
-
 }
+
 .menu  {
     color:white;
     cursor: pointer;
@@ -60,7 +121,7 @@ html {
     bottom: 0;
     left: 0;
     right: 100%;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 .menu:hover:after {
@@ -68,31 +129,36 @@ html {
 }
 
 
+
 /* BACKGROUND COVER SECTION */
 
 .background {
     width: 100%;
     position: relative;
-    z-index: 1;
 }
 
 .cover {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    
+    z-index: 1;
 }
 
 .text-cover {
     display: flex;
     position: absolute;
-    top: 0;
+    width: 920px;
+    top: 30%;
+    left: 50%; 
     height: 320px;
     color: white;
     z-index: 2;
     object-position: 100px;
     border: 5px solid white;
     text-align: center;
-    margin: 200px;
+    margin:auto;
+    transform: translate(-485px);
 }
 
 .text-cover-left {
@@ -130,17 +196,12 @@ html {
     padding-top: 20px;
     height: 160px;
     line-height: 18px;
-    fon
-}
-
-.text-cover-bottom-right > p {
-
 }
 
 
 /* AMAZING SECTION */
 
-.amazing {
+#amazing {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -159,7 +220,6 @@ html {
     height: 280px;
     border: 2px solid rgb(233, 230, 230);
     border-radius: 10px;
-
 }
 
 .it-box {
@@ -181,7 +241,7 @@ html {
 
 /* ADVANTAGE SECTION */
 
-.advantage {
+#advantages {
     height: 800px;
     position: relative;
 }
@@ -229,6 +289,13 @@ html {
     background-color:#3a3633 ;
     text-align: center;
     padding: 20px 30px 20px 30px;
+    transition: width 2s , height 2s, transform 2s;
+}
+
+.cool-animation:hover {
+    height: 240px;
+    width: 660px;
+    transform: rotate(360deg);
 }
 
 .cool-animation > h3 {
@@ -244,76 +311,153 @@ html {
 
 
 
-
 /* GALLERY SECTION */
 
-.gallery {
+#gallery {
     width: 100%;
     height: 600px;
-    
-
 }
 
 .top-pictures {
     display: flex;
-    
-    width:100%;
-    
+    width:100%; 
 }
 
 .bottom-pictures {
     display: flex;
-    
     width: 100%;
-    
+}
+
+.text-hidden {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    visibility: hidden;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.container-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
 .image-tesla {
-    
+    display: flex;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 100%;
     background-image: url(../imgs/tesla.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ;
+}
+
+.image-tesla:hover {
+    transform:scale(1.1);  
+}
+
+.image-tesla:hover .text-hidden{
+    visibility: visible;
 }
 
 .image-procat {
-    width: 100%;
     display: flex;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-image: url(../imgs/procat.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ;   
+}
+
+.image-procat:hover {
+    transform:scale(1.1);  
+}
+
+.image-procat:hover .text-hidden{
+    visibility: visible;
 }
 
 .image-hyperloop {
-    width: 100%;
     display: flex;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-image: url(../imgs/hyperloop.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ;   
+}
+
+.image-hyperloop:hover {
+    transform:scale(1.1);  
+}
+
+.image-hyperloop:hover .text-hidden{
+    visibility: visible;
 }
 
 .image-sneakycat {
+    display: flex;
     width: 100%;
-    height: 300px;
+    height: 100%;
     background-image: url(../imgs/sneakycat.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ;   
+}
+
+.image-sneakycat:hover {
+    transform:scale(1.1);  
+}
+
+.image-sneakycat:hover .text-hidden{
+    visibility: visible;
 }
 
 .image-falconrocket {
-    width: 100%;
     display: flex;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-image: url(../imgs/falconrocket.jpeg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ;
+}
+
+.image-falconrocket:hover {
+    transform:scale(1.1);  
+}
+
+.image-falconrocket:hover .text-hidden{
+    visibility: visible;
 }
 
 .image-funnycat {
-    width: 100%;
     display: flex;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-image: url(../imgs/funnycat.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ;
+}
+
+.image-funnycat:hover {
+    transform:scale(1.1);  
+}
+
+.image-funnycat:hover .text-hidden{
+    visibility: visible;
 }
 
 /*  EMAIL REGISTER SECTION */
@@ -381,3 +525,130 @@ html {
     color: black;
     text-decoration: none;
 }
+
+/* MOBILE VERSION */
+
+/* greater or equal to 768 */
+
+@media (max-width: 768px) 
+{
+
+    /* NAV BAR */
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+
+
+
+    /* COVER */
+
+
+    .background {
+        width: 100%;
+        height: 545px;
+    }
+
+    .cover {
+        object-fit:cover;
+    }
+
+    .text-cover{
+        top: 50;
+        left: 480px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        
+    }
+    .text-cover-left {
+        width: 500px;
+        justify-content: start;
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .text-cover-right {
+        width: 100%; 
+    }
+
+    .text-cover-top-right {
+        height: 50px;
+        font-size: 20px
+    }
+
+    .text-cover-bottom-right {
+        flex-direction: column;
+    }
+
+    /* AMAZING */
+
+    #amazing {
+        height: 1100px;
+        flex-direction: column; 
+        justify-content: space-between;
+        margin: 50px 0 50px 0;
+    }
+
+    /* ADVANTAGE */
+
+    #advantage {
+        height: 900px;
+    }
+
+    .top-advantage {
+        height: 450px;
+    }
+
+    .bottom-advantage {
+        height: 200px;
+        padding-top: 100px;
+    }
+
+    .cool-animation {
+        top: 380px;
+        left: 230px ;
+    }
+
+    /* GALLERY  */
+    
+    #gallery {
+        height: 1800px;
+    }
+    .top-pictures {
+        flex-direction: column;
+    }
+
+    .bottom-pictures {
+        flex-direction: column;
+    }
+
+    /* INFO */
+
+    .info {
+        flex-direction: column;
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            
+            
+
+
