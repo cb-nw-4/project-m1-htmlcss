@@ -1,3 +1,459 @@
 @import 'css-reset.css';
 
 /* CSS here :) */
+body {
+    font-family: poppins;
+    line-height: 1.3rem;
+}
+
+.nav-logo {
+width: 40px;
+}
+
+.navbar {
+display: flex;  
+justify-content: space-between;   
+overflow: hidden;      
+background-color: #3A3633;   
+z-index: 2;
+}
+
+.navbar a,
+.navbar a:visited {
+float: left;       
+color: 	#F0F0F0;
+padding: 15px;
+text-decoration: none;   
+}
+
+.nav-button,
+.nav-button:hover { 
+    border: none;   
+    outline: none;  
+    padding: 15px;
+}
+
+.phone-dropdown {   
+display: none;     
+position: absolute;
+left: 0;
+background-color: #3A3633;
+width: 100%;
+}
+
+.phone-dropdown a {
+float: none;    
+display: block;   
+text-align: center;    
+padding: 20px;
+}
+
+.phone-dropdown a:hover {   
+background-color: #4a4541;
+}
+
+.nav-phone:hover .phone-dropdown { 
+display: block;
+}
+
+.wide-dropdown {  
+display: none;
+}
+
+/* hero */
+.hero {
+    background-image: url('/imgs/bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+}
+
+.hero > h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 0 30px 10px;
+}
+
+.herotext {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.herotext > h2 {
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.herotext > p {
+    padding: 0 10px 20px 10px;
+}
+
+/* feature */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+.feature {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    box-shadow: 0px 2px 4px 1px #cfcfcf;
+    text-align: center;
+}
+
+.feature > img {
+    height: 80px;
+}
+
+.feature > h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.feature > p {
+    font-size: 1rem;
+    padding-bottom: 15px;
+    height: 100%;
+}
+
+button {
+    background-color: #3A3633;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+button:hover {
+    outline: 2px solid yellow;
+    cursor: pointer;
+}
+
+/* cooltext */
+.grey {
+    height: 200px;
+    background-color: #3A3633;
+    color: white;
+    padding: 30px;
+
+}
+
+.titlegre {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+.animated {
+    position: relative;
+    bottom: -50px;
+    left: 20%;
+    border: 5px solid white;
+    background-color: #3A3633;
+    padding: 22px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.animated:hover {
+    transform: rotate(360deg);
+    transition-duration: 3s;
+}
+
+.animated > h2 {
+    color: red;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.animated > p {
+    font-size: 0.9em;
+}
+
+.gradient {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, white , blue);
+    padding: 20px;
+    color: white;
+    text-align: right;
+}
+
+.titlegr {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+.pgr {
+    font-size: 1em;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-gap: 0px;
+}
+
+.image {
+    height: 250px;
+    display: flex;
+}
+
+span {
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    vertical-align: bottom;
+    padding: 116px 0;
+    color: white;
+}
+
+span:hover {
+    opacity : 100;
+    transition-delay: 0.2s;
+}
+
+.tesla {
+    background-image: url('/imgs/tesla.jpg');
+    background-size: auto 400px;
+    background-position: center;
+}
+
+.tesla:hover {
+    background-size: auto 500px;
+    transition-delay: 0.2s;
+}
+
+.procat {
+    background-image: url('/imgs/procat.jpg');
+    background-size: auto 400px;
+    background-position: center;
+}
+
+.procat:hover {
+    background-size: auto 500px;
+    transition-delay: 0.2s;
+}
+
+.hyperloop {
+    background-image: url('/imgs/hyperloop.jpg');
+    background-size: auto 400px;
+    background-position: center;
+}
+
+.hyperloop:hover {
+    background-size: auto 500px;
+    transition-delay: 0.2s;
+}
+
+.sneakycat {
+    background-image: url('/imgs/sneakycat.jpg');
+    background-size: auto 400px;
+    background-position: center;
+}
+
+.sneakycat:hover {
+    background-size: auto 500px;
+    transition-delay: 0.2s;
+}
+
+.falconrocket {
+    background-image: url('/imgs/falconrocket.jpeg');
+    background-size: auto 400px;
+    background-position: center;
+}
+
+.falconrocket:hover {
+    background-size: auto 500px;
+    transition-delay: 0.2s;
+}
+
+.funnycat {
+    background-image: url('/imgs/funnycat.jpg');
+    background-size: auto 400px;
+    background-position: center;
+}
+
+.funnycat:hover {
+    background-size: auto 500px;
+    transition-delay: 0.2s;
+}
+
+/* Mailling */
+form {
+    margin: 30px auto;
+    max-width: 250px;
+    padding: 10px;
+}
+
+.icon {
+    background-color: #9E9E9E;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    height: 20px;
+    outline: none;
+}
+
+.submit{
+    display: flex;
+    margin: 5px;
+}
+
+.email {
+    height: 20px;
+    padding: 3px;
+    border-radius: 5px 0 0 5px;
+    margin: 0;
+    outline: none;
+    border: 2px solid #9E9E9E;
+}
+
+.form {
+    margin-left: 5px;
+
+}
+
+label {
+    font-size: 0.9em;
+
+}
+
+.checkbox {
+    margin-left: 5px;
+}
+
+/* Footer */
+footer {
+    padding: 30px 10px;
+    border-top: 1px solid grey;
+}
+a {
+    display: block;
+    text-decoration: none;
+    margin-top: 5px;
+    color: #3A3633;
+}
+
+a:visited {
+    color: #3A3633;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 50px;
+        position: fixed;
+        width: 100%;
+    }
+        
+    .nav-button {
+        display: none;
+    }
+    
+    .nav-wide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+        
+    .wide-dropdown {
+        display: block;
+    }
+    
+    .wide-dropdown a {
+        display: inline-block;
+        position: relative;
+        font-size: 14px;
+        margin: 0 20px 0 20px;
+    }
+
+    .wide-dropdown a:after {
+        position: absolute;
+        background:	#F0F0F0;;
+        content: "";
+        bottom: 0;
+        height: 2px;
+        left: 50%;
+        transition: width 0.5s, left 0.5s;
+        width: 0;  
+    }
+        
+    .wide-dropdown a:hover:after { 
+        width: 100%; 
+        left: 0;
+    }   
+    
+    .hero {
+        height: 60vh;
+        display: flex;
+        padding: 15%;
+    }
+
+    .herobox {
+        display: flex;
+        border: 5px solid white;
+        height: 60%;
+    }
+
+    .herobox > h1 {
+        font-size: xxx-large;
+        padding:  20px;
+        line-height: 3rem;
+    }
+
+    .herotext {
+        
+    }
+
+    .herotext > h2 {
+        border-bottom: dashed 1px white;
+        padding: 20px;
+        font-size: xx-large;
+        line-height: 2rem;
+
+    }
+
+    .herotext > p {
+        padding: 20px;
+        column-count: 2;
+    }
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .image {
+        width: 33.33%;
+    }
+
+    .animated {
+        left: 100px;
+        bottom: -80px;
+    }
+
+    .animated:hover {
+        transform: rotate(360deg);
+        transition-duration: 3s;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
