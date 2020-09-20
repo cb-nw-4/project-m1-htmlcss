@@ -8,8 +8,153 @@
     />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- write some HTML! -->
+        <!-- Nav bar -->
+        <nav>          
+          <img src="imgs/logo.svg" alt="logo" class="logo" />          
+          <div class="menu">            
+            <img src="imgs/menu.svg" alt="menu" class="hamburger-menu" />            
+            <ul class="navigations">            
+              <li class="first"><a href="#features">Features</a></li>              
+              <li class="second"><a href="#advantages">Advantages</a></li>
+              <li class="third"><a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Background and text box -->          
+        <header class="introduce-box">            
+          <div class="header"> <!-- header for border and it will not be shown in mobile version-->
+            <h1 class="header-h1">Introducing Falcon 9</h1>               
+            <div class=second-box>                
+              <h2 class="header-h2">We make dreams come true</h2>                
+              <div class="header-text">                  
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>                  
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>                
+              </div>              
+            </div>            
+          </div>        
+        </header>
+        <!-- Features -->          
+        <section class="features" id="features">    <!-- id used to get to the section -->
+        <!-- First feature -->
+          <div class="feature-1">              
+            <div>                
+              <img src="imgs/icon_check.svg" alt="check-mark" class="check"/>                
+              <h3 class="feature-header">Amazing feature 1</h3>                
+              <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet.</p>         
+            </div>              
+            <div>              
+              <button type="button" class="button">Get it</button>              
+            </div>           
+          </div>  
+        <!-- Second feature -->
+          <div class="feature-2">              
+            <div>                
+              <img src="imgs/icon_reload.svg" alt="reload-mark" class="reload"/>                
+              <h3 class="feature-header">Amazing feature 2</h3>                
+              <p class="feature-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>              
+            </div>              
+            <div>              
+              <button type="button" class="button">Get it</button>            
+            </div>            
+          </div>      
+        <!-- Third feature -->
+        <div class="feature-3">              
+          <div>                
+            <img src="imgs/icon_fingerprint.svg" alt="fingerprint-mark" class="fingerprint"/>                
+            <h3 class="feature-header">Amazing feature 3</h3>                
+            <p class="feature-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>              
+          </div>              
+          <div>              
+            <button type="button" class="button">Get it</button>            
+          </div>            
+        </div>           
+        </section>
+        <!-- Advantages -->
+        <section class="Advantages" id="advantages"> <!-- id used to get to the section -->
+          <div class="advantages-box">
+            <div class="first-textbox">
+              <h1 class="first-header">Some cool text</h1>
+              <P class="first-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</P>
+            </div>
+            <div class="second-textbox">
+              <h1 class="second-header">Slick gradient</h1>
+              <p class="second-text">Lorem ipsum?</p>
+            </div>
+            <div class="middle-textbox">
+              <h3 class="middle-header">This looks cool</h3>
+              <p class="middle-text">Hover me if you like random animations</p>
+            </div>
+          </div>
+        </section>
+        <!-- Gallery -->
+        <section class="gallery" id="gallery"> <!-- id used to get to the section -->
+          <div class="gallery-container">
+            <div class="row1-1">
+              <img src="/imgs/tesla.jpg" alt="car" class="images" />
+              <p class="photo-hover-text">Our flagship car, The model S</p>
+            </div>
+            <div class="row1-2">
+              <img src="/imgs/procat.jpg" alt="cat" class="images" />
+              <p class="photo-hover-text">Cool cat</p>
+            </div>
+            <div class="row1-3">
+              <img src="/imgs/hyperloop.jpg" alt="hyperloop" class="images" />
+              <p class="photo-hover-text">Introducing: The Hyperloop</p>
+            </div>
+            <div class="row2-1">
+              <img src="/imgs/sneakycat.jpg" alt="cat" class="images" />
+              <p class="photo-hover-text">So sneaky</p>
+            </div>
+            <div class="row2-2">
+              <img src="/imgs/falconrocket.jpeg" alt="falcon rocket" class="images" />
+              <p class="photo-hover-text">BFR - Big Falcon Rocket</p>
+            </div>
+            <div class="row2-3">
+              <img src="imgs/funnycat.jpg" alt="cat" class="images" />
+              <p class="photo-hover-text">So much fun</p>
+          </div>
+          </div>  
+        </section>
+        <!-- Mail -->
+        <form class="mail">
+          <label for="register" class="label-register">Register to our mailing list:</label>
+          <div class="input-field">
+            <input type="email" id="email" class="email-box" size="30"/>
+            <button type="button" class="send-icon"><img src="imgs/icon_send.svg" alt="send"></button>
+          </div>
+          <!-- Little checkbox -->
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" class="checkbox" />
+            <label for="checkbox" class="label-checkbox">Send me daily cat images</label>
+          </div>
+        </form>
+        <!-- Footer -->
+        <footer>
+          <div class="footer-1">
+            <a href="#" class="links">About us</a>
+            <a href="#" class="links">Privacy Policy</a>
+            <a href="#" class="links">Legal notes</a>
+            <a href="#" class="links">Copyright</a>
+          </div>
+          <div class="footer-2">
+            <a href="#" class="links">About us</a>
+            <a href="#" class="links">Privacy Policy</a>
+            <a href="#" class="links">Legal notes</a>
+            <a href="#" class="links">Copyright</a>
+          </div>
+          <div class="footer-3">
+            <a href="#" class="links">About us</a>
+            <a href="#" class="links">Privacy Policy</a>
+            <a href="#" class="links">Legal notes</a>
+            <a href="#" class="links">Copyright</a>
+          </div>
+          <div class="footer-4">
+            <a href="#" class="links">About us</a>
+            <a href="#" class="links">Privacy Policy</a>
+            <a href="#" class="links">Legal notes</a>
+            <a href="#" class="links">Copyright</a>
+          </div>
+        </footer>
   </body>
-</html>
+  </html>
